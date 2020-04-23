@@ -1,0 +1,4 @@
+Cannot generate into /home/lorenzo/robotics/build
+It is already used for project /home/lorenzo/robotics/src
+
+Please either delete it manually or select another generation directory

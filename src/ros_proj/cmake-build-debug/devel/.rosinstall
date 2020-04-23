@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/setup.sh
