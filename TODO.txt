@@ -1,0 +1,17 @@
+1 - Leggere la bag (metodo)
+2 - Rosbags: 
+	1_posizione gps auto: lat x, long y, alt z (custom message 1)
+	2_posizione gps ostacolo: lat x, long y, alt z (custom message 2)
+	Serve un nodo per macchina (tot 2 nodi) perchè c'è una sola fonte gps
+3 - Convertire da LLA in ENU (metodo)
+4 - Pubblicare TF
+5 - odometry macchina e target in ENU (da un hardcoded 0)
+6 - calcolare distanza tra veicoli (con flag con custom message)
+7 - parameter server per criteri di conversione
+8 - studiare dynamic reconfigure
+9 - gestione errori
+10 - message filter prende i 2 messaggi dei nodi e calcola la distanza 
+	e flag per ogni punto 
+
+Notes
+1 - se si sfancula il segnale gestiscilo bene (no distanza 0 tra le macchine)
