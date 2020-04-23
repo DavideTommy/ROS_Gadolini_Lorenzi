@@ -16,8 +16,6 @@
 
 #define BUFFER_SIZE 50
 
-using std::string;
-
 
 
 struct encoded {
@@ -126,7 +124,7 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
     vehicleEncodedMessage.N = vehicle->No;
     vehicleEncodedMessage.Up = vehicle->U;
 
-
+    //strcpy(vehicleEncodedMessage.topic, test);
 
     ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
 
@@ -145,6 +143,7 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "ros_proj");
 
 
+
     latitude_init = atof(argv[1]);
     longitude_init = atof(argv[2]);
     h0 = atof(argv[3]);
@@ -154,7 +153,6 @@ int main(int argc, char **argv) {
     ros::Subscriber bagTopic = nh.subscribe(argv[4] , BUFFER_SIZE, topicManager);
     ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
     ros::spin();
-
 
     return 0;
 

@@ -52,14 +52,6 @@ nav_msgs/Odometry.h
 ros_proj/customMsg.h
 /home/lorenzo/robotics/src/ros_proj/src/ros_proj/customMsg.h
 
-/home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp
-ros/ros.h
-/home/lorenzo/robotics/src/ros_proj/src/ros/ros.h
-std_msgs/String.h
-/home/lorenzo/robotics/src/ros_proj/src/std_msgs/String.h
-sstream
--
-
 /opt/ros/melodic/include/dynamic_reconfigure/BoolParameter.h
 string
 -
