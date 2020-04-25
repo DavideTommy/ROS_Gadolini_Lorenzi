@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ros_proj_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/lorenzo/robotics/src/ros_proj/include " STREQUAL " ")
+if(NOT " " STREQUAL " ")
   set(ros_proj_INCLUDE_DIRS "")
-  set(_include_dirs "/home/lorenzo/robotics/src/ros_proj/include")
+  set(_include_dirs "")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -116,7 +116,7 @@ if(NOT "/home/lorenzo/robotics/src/ros_proj/include " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "ros_proj")
+set(libraries "")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")

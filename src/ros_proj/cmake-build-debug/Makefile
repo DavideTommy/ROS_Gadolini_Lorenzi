@@ -492,32 +492,32 @@ gtest_main/fast:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/test.o: src/test.cpp.o
+src/Odometer.o: src/Odometer.cpp.o
 
-.PHONY : src/test.o
+.PHONY : src/Odometer.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/Odometer.cpp.o:
+	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/src/Odometer.cpp.o
+.PHONY : src/Odometer.cpp.o
 
-src/test.i: src/test.cpp.i
+src/Odometer.i: src/Odometer.cpp.i
 
-.PHONY : src/test.i
+.PHONY : src/Odometer.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/Odometer.cpp.i:
+	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/src/Odometer.cpp.i
+.PHONY : src/Odometer.cpp.i
 
-src/test.s: src/test.cpp.s
+src/Odometer.s: src/Odometer.cpp.s
 
-.PHONY : src/test.s
+.PHONY : src/Odometer.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/Odometer.cpp.s:
+	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/src/Odometer.cpp.s
+.PHONY : src/Odometer.cpp.s
 
 # Help Target
 help:
@@ -557,9 +557,9 @@ help:
 	@echo "... gmock"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... src/Odometer.o"
+	@echo "... src/Odometer.i"
+	@echo "... src/Odometer.s"
 .PHONY : help
 
 
