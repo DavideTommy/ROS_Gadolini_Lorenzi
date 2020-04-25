@@ -278,6 +278,12 @@ LSB_FOUND:BOOL=TRUE
 //Path to a program.
 LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
+//Value Computed by CMake
+Mentasti_BINARY_DIR:STATIC=/home/lorenzo/robotics/src/ros_proj/cmake-build-debug
+
+//Value Computed by CMake
+Mentasti_SOURCE_DIR:STATIC=/home/lorenzo/robotics/src/ros_proj
+
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
