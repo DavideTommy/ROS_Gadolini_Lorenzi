@@ -36,7 +36,7 @@ public:
 
 static void lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg) {
 
-    ROS_INFO("Letto la latitudine/longitudine dalla bag: %f %f", msg->latitude, msg->longitude);
+    ROS_INFO("Letto la latitudine/longitudine/altitudine dalla bag: %f %f %f", msg->latitude, msg->longitude, msg->altitude);
 
 };
 

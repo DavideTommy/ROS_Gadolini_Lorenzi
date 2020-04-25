@@ -15,3 +15,33 @@
 
 Notes
 1 - se si sfancula il segnale gestiscilo bene (no distanza 0 tra le macchine)
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+EXECUTION:
+
+1) Aprire terminale ed eseguire comando "roscore"
+2) Aprire un altro terminale ed eseguire cd robotics, successivamente catkin_make
+3) Nello stesso terminale eseguire source devel/setup.bash
+4) Nello stesso terminale esegui rosrun ros_proj ros_proj
+5) Seleziona il file eseguibile #1
+6) In un altro terminale esegui cd robotics/src/ros_proj/src
+7) Nello stesso terminale esegui rosbag play project.bag
+
+
+
+NOTA IMPORTANTE
+
+
+Se si necessita di eseguire un file .cpp diverso (ovvero che non sia Odometer.cpp, cambiare il codice di odometer non necessita di cancellazioni), è necessario eliminare la cartella build da robotics, ed editare il file ros_proj/CMakeLists.txt cambiando il nome del file
+alla riga add_executrables.
+
+Eliminare la cartella build fa si che non ci siano altri eseguibili vecchi e che tutto il workspace venga generato nuovamente.
