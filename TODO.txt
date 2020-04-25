@@ -17,12 +17,6 @@ Notes
 1 - se si sfancula il segnale gestiscilo bene (no distanza 0 tra le macchine)
 
 
-
-
-
-
-
-
 -------------------------------------------------------------------------------------------------------------------------
 
 
@@ -45,3 +39,6 @@ Se si necessita di eseguire un file .cpp diverso (ovvero che non sia Odometer.cp
 alla riga add_executrables.
 
 Eliminare la cartella build fa si che non ci siano altri eseguibili vecchi e che tutto il workspace venga generato nuovamente.
+
+
+Si può usare anche il terminale di clion, basta runnare roscore e rosbag da due terminali e compilare ed eseguire come un programma normale da clion.

@@ -1,15 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="gmock" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="gtest_main" />
+      <config projectName="ros_proj" targetName="clean_test_results" />
+      <config projectName="ros_proj" targetName="ros_proj" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="gtest" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="doxygen" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="download_extra_data" />
+      <config projectName="ros_proj" targetName="run_tests" />
+      <config projectName="ros_proj" targetName="gmock_main" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="tests" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_lisp" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH= ~/robotics/devel" GENERATION_DIR="cmake-build-debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH= ~/robotics/devel" GENERATION_DIR="~/robotics" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="" />
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="First Bag Reading PT.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,16 +64,20 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1awUqji6YY7NanZIbjaslx69nsr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -36,6 +86,11 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ros_proj/cmake-build-debug" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ros_proj/src" />
+    </key>
   </component>
   <component name="RunManager" selected="CMake Application.ros_proj">
     <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
@@ -203,13 +258,77 @@
       <updated>1587646343398</updated>
       <workItem from="1587646348212" duration="5397000" />
       <workItem from="1587651800990" duration="493000" />
+      <workItem from="1587652792592" duration="1417000" />
+      <workItem from="1587655712074" duration="575000" />
+      <workItem from="1587801047156" duration="1612000" />
+      <workItem from="1587803639172" duration="3489000" />
+      <workItem from="1587818141729" duration="8436000" />
+      <workItem from="1587828713869" duration="5592000" />
+      <workItem from="1587834583721" duration="53000" />
     </task>
+    <task id="LOCAL-00001" summary="Setup Pt.1">
+      <created>1587653137449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587653137449</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Setup Pt.2">
+      <created>1587804614132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587804614132</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First Bag Reading">
+      <created>1587833185023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587833185023</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First Bag Reading PT.2">
+      <created>1587833767565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587833767565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Setup Pt.1" />
+    <MESSAGE value="Setup Pt.2" />
+    <MESSAGE value="First Bag Reading" />
+    <MESSAGE value="First Bag Reading PT.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Bag Reading PT.2" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="451" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587826184142">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="451" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.958@67.27.1853.958" timestamp="1587826184142" />
+    <state x="726" y="254" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587828014891">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="726" y="254" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.958@67.27.1853.958" timestamp="1587828014891" />
     <state x="744" y="221" width="926" height="518" key="EnvironmentVariablesDialog" timestamp="1587648289961">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
@@ -218,13 +337,49 @@
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="776" y="264" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.958@67.27.1853.958" timestamp="1587648486213" />
+    <state x="599" y="361" width="779" height="288" key="FileDocumentManager.FileCacheConflict" timestamp="1587832021698">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="599" y="361" width="779" height="288" key="FileDocumentManager.FileCacheConflict/67.27.1853.958@67.27.1853.958" timestamp="1587832021698" />
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog" timestamp="1587646661216">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog/67.27.1853.958@67.27.1853.958" timestamp="1587646661216" />
-    <state x="124" y="96" width="1384" height="747" key="SettingsEditor" timestamp="1587648489629">
+    <state width="1807" height="247" key="GridCell.Tab.0.bottom" timestamp="1587827552937">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
-    <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
+    <state width="1807" height="247" key="GridCell.Tab.0.bottom/67.27.1853.958@67.27.1853.958" timestamp="1587827552937" />
+    <state width="1807" height="247" key="GridCell.Tab.0.center" timestamp="1587827552935">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="247" key="GridCell.Tab.0.center/67.27.1853.958@67.27.1853.958" timestamp="1587827552935" />
+    <state width="1807" height="247" key="GridCell.Tab.0.left" timestamp="1587827552934">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="247" key="GridCell.Tab.0.left/67.27.1853.958@67.27.1853.958" timestamp="1587827552934" />
+    <state width="1807" height="247" key="GridCell.Tab.0.right" timestamp="1587827552936">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="247" key="GridCell.Tab.0.right/67.27.1853.958@67.27.1853.958" timestamp="1587827552936" />
+    <state x="573" y="243" width="824" height="526" key="IDE.errors.dialog" timestamp="1587833375594">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="573" y="243" width="824" height="526" key="IDE.errors.dialog/67.27.1853.958@67.27.1853.958" timestamp="1587833375594" />
+    <state x="136" y="109" width="1384" height="747" key="SettingsEditor" timestamp="1587834635793">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="136" y="109" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587834635793" />
+    <state x="506" y="412" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587833769844">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="506" y="412" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.958@67.27.1853.958" timestamp="1587833769844" />
+    <state x="764" y="420" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587833145588">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="764" y="420" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.958@67.27.1853.958" timestamp="1587833145588" />
+    <state x="656" y="234" width="670" height="58" key="search.everywhere.popup" timestamp="1587827875504">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state x="656" y="234" width="670" height="58" key="search.everywhere.popup/67.27.1853.958@67.27.1853.958" timestamp="1587827875504" />
   </component>
 </project>
