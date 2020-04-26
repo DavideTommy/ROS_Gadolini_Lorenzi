@@ -15,22 +15,57 @@
 #define BUFFER_SIZE 50
 
 
-using namespace std;
-using namespace message_filters;
-
-
  struct encoded {
 
      float North;
      float East;
      float Up;
         
- }; 
- 
- struct encoded* Car;
- struct encoded* Obstacle;
+ };
+
+
+static struct  encoded* Car;
+static struct encoded* Obstacle;
         
- static struct encoded* lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg) {
+static struct encoded* lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);;
+
+void carManager(const sensor_msgs::NavSatFix::ConstPtr&msg);;
+
+void obsManager(const sensor_msgs::NavSatFix::ConstPtr&msg);
+void distanceCalculator(encoded* car, encoded* obs);
+
+
+
+class Odometer {
+
+public:
+    ros::NodeHandle nh;
+    ros::Subscriber  carBag = nh.subscribe("/swiftnav/front/gps_pose", BUFFER_SIZE, carManager);
+    ros::Subscriber  obsBag = nh.subscribe("/swiftnav/obs/gps_pose", BUFFER_SIZE, obsManager);
+
+
+    /**
+ * Costruttore Classe odometro
+ */
+
+    Odometer() {
+
+    };
+
+
+
+};
+
+/**
+    * Prende le coordinate dei punti e fa la manhattan distance
+    *
+    * dovrà prendere in ingresso le coordinate della macchina e dell'ostacolo e fare i conti
+    * @return distance
+    */
+
+
+struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
+
     //ROS_INFO("Input position: [%f,%f, %f]", msg->latitude, msg->longitude,msg->altitude);
     // fixed values
 
@@ -88,80 +123,42 @@ using namespace message_filters;
     float xd = x - x0;
     float  yd = y - y0;
     float  zd = z - z0;
-    
+
     struct encoded* temp = new struct encoded;
-    
-        
+
+
     temp->East = -sin_phi * xd + cos_phi * yd;
     temp->North = -cos_phi * sin_lambda * xd - sin_lambda * sin_phi * yd + cos_lambda * zd;
     temp->Up = cos_lambda * cos_phi * xd + cos_lambda * sin_phi * yd + sin_lambda * zd;
 
     //ROS_INFO("ENU position: [%f,%f, %f]", xEast, yNorth,zUp);
-    
+
     return temp;
-
-};
-
-void carManager(const sensor_msgs::NavSatFix::ConstPtr&msg){
-    Car = lla2enu(msg);
-    printf("Car coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", Car->East, Car->North,Car->Up);
-};
-
-
-void obsManager(const sensor_msgs::NavSatFix::ConstPtr&msg){
-    
-    Obstacle = lla2enu(msg);
-    
-    printf("Obstacle Coords: N %f E %f U %f \n", Obstacle->North, Obstacle ->East, Obstacle->Up);
-            
-            
-
-};
-
-class Odometer {
-
-public:
-    ros::NodeHandle nh;
-    ros::Subscriber carBag = nh.subscribe("/swiftnav/front/gps_pose", BUFFER_SIZE, carManager);
-    ros::Subscriber obsBag = nh.subscribe("/swiftnav/obs/gps_pose", BUFFER_SIZE, obsManager);
-
-
-    /**
- * Costruttore Classe odometro
- */
-
-    Odometer() {
-
-    };
-
-};
-/**
-* Prende le coordinate dei punti e fa la manhattan distance
-*
-* dovrà prendere in ingresso le coordinate della macchina e dell'ostacolo e fare i conti
-* @return distance
-*/
-float distanceCalculator(){
-    float distance = 0;
-
-    float xc = 0;
-    float yc = 0;
-    float hc = 0;
-    float xo = 0;
-    float yo = 0;
-    float ho = 0;
-
-    //manhattan distance
-    distance = abs(xc - xo) + abs(yc - yo) + abs(hc - ho);
-
-    if (distance >= 5) printf("Safe");
-    else if (1<=distance<5) printf("Unsafe");
-    else if (distance<1) printf("Crash");
-    else printf("Error: distance not correct");
-
 
 }
 
+void obsManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
+
+    Obstacle = lla2enu(msg);
+    printf("Obstacle Coords: N %f E %f U %f \n", Obstacle->North, Obstacle->East, Obstacle->Up);
+}
+
+void carManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
+    Car = lla2enu(msg);
+    printf("Car coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", Car->East, Car->North,Car->Up);
+}
+
+void distanceCalculator(encoded car, encoded obs) {
+    float distance;
+
+    //manhattan distance
+    distance = abs(car.North - obs.North) + abs(car.East - obs.East) + abs(car.Up - obs.Up);
+
+    if (distance >= 5) printf("Safe");
+    else if (1<=distance && distance <5) printf("Unsafe");
+    else if (distance<1) printf("Crash");
+    else printf("Error: distance not correct");
+}
 
 
 /**
@@ -172,7 +169,10 @@ float distanceCalculator(){
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "odometer");
+    //Odometer* odometer = new Odometer;
     Odometer odometer;
+
+    //odometer::distanceCalculator(Car,Obstacle);
 
     ros::spin();
 
