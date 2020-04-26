@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_proj.dir/src/odometry.cpp.o"
+  "CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o"
   "devel/lib/ros_proj/ros_proj"
   "devel/lib/ros_proj/ros_proj.pdb"
 )

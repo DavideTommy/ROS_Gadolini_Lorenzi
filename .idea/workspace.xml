@@ -20,46 +20,46 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="gmock" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="doxygen" />
-      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_py" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="ros_proj" />
       <config projectName="ros_proj" targetName="run_tests" />
-      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="clean_test_results" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
       <config projectName="ros_proj" targetName="gmock_main" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="gtest" />
-      <config projectName="ros_proj" targetName="gtest_main" />
-      <config projectName="ros_proj" targetName="tests" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="download_extra_data" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="ros_proj" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="download_extra_data" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="gmock" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="tests" />
+      <config projectName="ros_proj" targetName="doxygen" />
+      <config projectName="ros_proj" targetName="gtest_main" />
+      <config projectName="ros_proj" targetName="clean_test_results" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="gtest" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -68,8 +68,30 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="_Added launcher&#10;_fixed obj programming&#10;_TODO manage the 2 subscriber to have a distance">
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="Encoding LLA to ENU and data structures">
+      <change afterPath="$PROJECT_DIR$/src/ros_proj/src/rosMaster.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +108,9 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1awUqji6YY7NanZIbjaslx69nsr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -357,8 +381,14 @@
       <updated>1587646343398</updated>
       <workItem from="1587646348212" duration="5397000" />
       <workItem from="1587651800990" duration="493000" />
-      <workItem from="1587857810432" duration="2408000" />
-      <workItem from="1587860246154" duration="4379000" />
+      <workItem from="1587652792592" duration="1417000" />
+      <workItem from="1587655712074" duration="575000" />
+      <workItem from="1587801047156" duration="1612000" />
+      <workItem from="1587803639172" duration="3489000" />
+      <workItem from="1587818141729" duration="8436000" />
+      <workItem from="1587828713869" duration="5592000" />
+      <workItem from="1587834583721" duration="363000" />
+      <workItem from="1587891537070" duration="4544000" />
     </task>
     <task id="LOCAL-00001" summary="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
       <created>1587862820056</created>
@@ -410,22 +440,42 @@
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog/67.27.1853.958@67.27.1853.958" timestamp="1587646661216" />
-    <state width="1807" height="257" key="GridCell.Tab.0.bottom" timestamp="1587863628292">
-      <screen x="67" y="27" width="1853" height="988" />
+    <state width="903" height="89" key="GridCell.Tab.0.bottom" timestamp="1587906174190">
+      <screen x="67" y="27" width="1853" height="958" />
     </state>
+    <state width="903" height="89" key="GridCell.Tab.0.bottom/67.27.1853.958@67.27.1853.958" timestamp="1587906174190" />
     <state width="1807" height="257" key="GridCell.Tab.0.bottom/67.27.1853.988@67.27.1853.988" timestamp="1587863628292" />
-    <state width="1807" height="257" key="GridCell.Tab.0.center" timestamp="1587863628291">
-      <screen x="67" y="27" width="1853" height="988" />
+    <state width="903" height="89" key="GridCell.Tab.0.center" timestamp="1587906174189">
+      <screen x="67" y="27" width="1853" height="958" />
     </state>
+    <state width="903" height="89" key="GridCell.Tab.0.center/67.27.1853.958@67.27.1853.958" timestamp="1587906174189" />
     <state width="1807" height="257" key="GridCell.Tab.0.center/67.27.1853.988@67.27.1853.988" timestamp="1587863628291" />
-    <state width="1807" height="257" key="GridCell.Tab.0.left" timestamp="1587863628291">
-      <screen x="67" y="27" width="1853" height="988" />
+    <state width="903" height="89" key="GridCell.Tab.0.left" timestamp="1587906174188">
+      <screen x="67" y="27" width="1853" height="958" />
     </state>
+    <state width="903" height="89" key="GridCell.Tab.0.left/67.27.1853.958@67.27.1853.958" timestamp="1587906174188" />
     <state width="1807" height="257" key="GridCell.Tab.0.left/67.27.1853.988@67.27.1853.988" timestamp="1587863628291" />
-    <state width="1807" height="257" key="GridCell.Tab.0.right" timestamp="1587863628292">
-      <screen x="67" y="27" width="1853" height="988" />
+    <state width="903" height="89" key="GridCell.Tab.0.right" timestamp="1587906174189">
+      <screen x="67" y="27" width="1853" height="958" />
     </state>
+    <state width="903" height="89" key="GridCell.Tab.0.right/67.27.1853.958@67.27.1853.958" timestamp="1587906174189" />
     <state width="1807" height="257" key="GridCell.Tab.0.right/67.27.1853.988@67.27.1853.988" timestamp="1587863628292" />
+    <state width="1807" height="410" key="GridCell.Tab.1.bottom" timestamp="1587905069603">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="410" key="GridCell.Tab.1.bottom/67.27.1853.958@67.27.1853.958" timestamp="1587905069603" />
+    <state width="1807" height="410" key="GridCell.Tab.1.center" timestamp="1587905069601">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="410" key="GridCell.Tab.1.center/67.27.1853.958@67.27.1853.958" timestamp="1587905069601" />
+    <state width="1807" height="410" key="GridCell.Tab.1.left" timestamp="1587905069600">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="410" key="GridCell.Tab.1.left/67.27.1853.958@67.27.1853.958" timestamp="1587905069600" />
+    <state width="1807" height="410" key="GridCell.Tab.1.right" timestamp="1587905069602">
+      <screen x="67" y="27" width="1853" height="958" />
+    </state>
+    <state width="1807" height="410" key="GridCell.Tab.1.right/67.27.1853.958@67.27.1853.958" timestamp="1587905069602" />
     <state x="124" y="98" width="1384" height="747" key="SettingsEditor" timestamp="1587862964865">
       <screen x="67" y="27" width="1853" height="988" />
     </state>

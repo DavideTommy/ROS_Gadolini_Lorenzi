@@ -205,5 +205,5 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(ros_proj src/odometry.cpp)
+add_executable(ros_proj src/odometry.cpp src/rosMaster.cpp)
 target_link_libraries(ros_proj ${catkin_LIBRARIES})

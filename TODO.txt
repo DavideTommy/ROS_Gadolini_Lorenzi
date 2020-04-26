@@ -1,44 +1,25 @@
-1 - Leggere la bag (metodo)
-2 - Rosbags: 
-	1_posizione gps auto: lat x, long y, alt z (custom message 1)
-	2_posizione gps ostacolo: lat x, long y, alt z (custom message 2)
-	Serve un nodo per macchina (tot 2 nodi) perchè c'è una sola fonte gps
-3 - Convertire da LLA in ENU (metodo)
-4 - Pubblicare TF
-5 - odometry macchina e target in ENU (da un hardcoded 0)
-6 - calcolare distanza tra veicoli (con flag con custom message)
-7 - parameter server per criteri di conversione
-8 - studiare dynamic reconfigure
-9 - gestione errori
-10 - message filter prende i 2 messaggi dei nodi e calcola la distanza 
-	e flag per ogni punto 
+Progetto Robotics, Pianificazione:
 
-Notes
-1 - se si sfancula il segnale gestiscilo bene (no distanza 0 tra le macchine)
+1) Necessità di un file .cpp che istanzi due nodi che si occuperanno di iscriversi ai topics della bag, uno come gestore dei messaggi Macchina (Front) e uno come gestore dei messaggi Ostacolo (Obs);
+Questi due nodi dovranno :
 
+- Istanziarsi prendendo in input (da launcher) un parametro che serva a distinguere in quale modalità operare (front o obs);
+- Essere lanciato da launch file e ricevere il valore di riferimento degli assi per la conversione lla-enu;
+- Sottoscriversi al topic registrato nella bag e assegnato dal launcher;
+- Pubblicare su un NUOVO topic per ogni veicolo i dati letti dalla bag e gia convertiti;
 
--------------------------------------------------------------------------------------------------------------------------
+2) Necessità di un Service che effettui il calcolo della distanza.
+Il service dovrebbe essere in grado di iscriversi ai due topic che i nodi "Enocder" hanno creato e su cui stan pubblicando i dati encoddati.
 
+Per prima cosa il service viene avviato e riceve come parametro il nome/percorso sul quale i due encoder stan pubblicando dati enu
+Tramite message filter il service sarà in grado di distinguere i dati in ingresso, di effettuare il conto, e di restituire il valore.
 
-EXECUTION:
+3) Necessità di un file .cpp che istanzi un nodo il cui compito è contattare "continuamente" il service, per ottenere ad ogni call la distanza a cui si trovano i due veicoli.
 
-1) Aprire terminale ed eseguire comando "roscore"
-2) Aprire un altro terminale ed eseguire cd robotics, successivamente catkin_make
-3) Nello stesso terminale eseguire source devel/setup.bash
-4) Nello stesso terminale esegui rosrun ros_proj ros_proj
-5) Seleziona il file eseguibile #1
-6) In un altro terminale esegui cd robotics/src/ros_proj/src
-7) Nello stesso terminale esegui rosbag play project.bag
+4) Implementare un message filter che si occuperà della gestione di sincronia e indirizzamento dei topic.
 
 
 
-NOTA IMPORTANTE
 
-
-Se si necessita di eseguire un file .cpp diverso (ovvero che non sia odometer.cpp, cambiare il codice di odometer non necessita di cancellazioni), è necessario eliminare la cartella build da robotics, ed editare il file ros_proj/CMakeLists.txt cambiando il nome del file
-alla riga add_executrables.
-
-Eliminare la cartella build fa si che non ci siano altri eseguibili vecchi e che tutto il workspace venga generato nuovamente.
-
-
-Si può usare anche il terminale di clion, basta runnare roscore e rosbag da due terminali e compilare ed eseguire come un programma normale da clion.
+TODO: Eseguire la bag/tradurla in un altro formato file, ed estrapolare la prima coordinata trasmessa dalla macchina (front).
+      Questo è lo starting point da copiare nel launch file.

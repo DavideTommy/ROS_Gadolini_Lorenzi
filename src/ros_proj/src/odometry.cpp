@@ -11,37 +11,33 @@
 #include <tf/transform_broadcaster.h>
 #include <malloc.h>
 
-
 #define BUFFER_SIZE 50
+struct encoded {
+
+    float North;
+    float East;
+    float Up;
+
+};
+
+static struct encoded *Car;
+static struct encoded *Obstacle;
 
 
- struct encoded {
+static struct encoded *lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
-     float North;
-     float East;
-     float Up;
-        
- };
+void carManager(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
-
-static struct  encoded* Car;
-static struct encoded* Obstacle;
-        
-static struct encoded* lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);;
-
-void carManager(const sensor_msgs::NavSatFix::ConstPtr&msg);;
-
-void obsManager(const sensor_msgs::NavSatFix::ConstPtr&msg);
-void distanceCalculator(encoded* car, encoded* obs);
+void obsManager(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
 
 
 class Odometer {
 
 public:
-    ros::NodeHandle nh;
-    ros::Subscriber  carBag = nh.subscribe("/swiftnav/front/gps_pose", BUFFER_SIZE, carManager);
-    ros::Subscriber  obsBag = nh.subscribe("/swiftnav/obs/gps_pose", BUFFER_SIZE, obsManager);
+
+
+
 
 
     /**
@@ -51,9 +47,6 @@ public:
     Odometer() {
 
     };
-
-
-
 };
 
 /**
@@ -72,7 +65,7 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     double a = 6378137;
     double b = 6356752.3142;
     double f = (a - b) / a;
-    double e_sq = f * (2-f);
+    double e_sq = f * (2 - f);
     float deg_to_rad = 0.0174533;
 
     // input data from msg
@@ -87,44 +80,44 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
 
 
     //lla to ecef
-    float lamb = deg_to_rad*(latitude);
-    float phi = deg_to_rad*(longitude);
+    float lamb = deg_to_rad * (latitude);
+    float phi = deg_to_rad * (longitude);
     float s = sin(lamb);
     float N = a / sqrt(1 - e_sq * s * s);
 
     float sin_lambda = sin(lamb);
-    float  cos_lambda = cos(lamb);
-    float  sin_phi = sin(phi);
-    float  cos_phi = cos(phi);
+    float cos_lambda = cos(lamb);
+    float sin_phi = sin(phi);
+    float cos_phi = cos(phi);
 
-    float  x = (h + N) * cos_lambda * cos_phi;
-    float  y = (h + N) * cos_lambda * sin_phi;
-    float  z = float(h + (1 - e_sq) * N) * sin_lambda;
+    float x = (h + N) * cos_lambda * cos_phi;
+    float y = (h + N) * cos_lambda * sin_phi;
+    float z = float(h + (1 - e_sq) * N) * sin_lambda;
 
     //ROS_INFO("ECEF position: [%f,%f, %f]", x, y,z);
 
 
     // ecef to enu
 
-    lamb = deg_to_rad*(latitude_init);
-    phi = deg_to_rad*(longitude_init);
+    lamb = deg_to_rad * (latitude_init);
+    phi = deg_to_rad * (longitude_init);
     s = sin(lamb);
-    N =  a / sqrt(1 - e_sq * s * s);
+    N = a / sqrt(1 - e_sq * s * s);
 
     sin_lambda = sin(lamb);
     cos_lambda = cos(lamb);
     sin_phi = sin(phi);
     cos_phi = cos(phi);
 
-    float  x0 = (h0 + N) * cos_lambda * cos_phi;
-    float  y0 = (h0 + N) * cos_lambda * sin_phi;
-    float  z0 = float(h0 + (1 - e_sq) * N) * sin_lambda;
+    float x0 = (h0 + N) * cos_lambda * cos_phi;
+    float y0 = (h0 + N) * cos_lambda * sin_phi;
+    float z0 = float(h0 + (1 - e_sq) * N) * sin_lambda;
 
     float xd = x - x0;
-    float  yd = y - y0;
-    float  zd = z - z0;
+    float yd = y - y0;
+    float zd = z - z0;
 
-    struct encoded* temp = new struct encoded;
+    struct encoded *temp = new struct encoded;
 
 
     temp->East = -sin_phi * xd + cos_phi * yd;
@@ -134,7 +127,6 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     //ROS_INFO("ENU position: [%f,%f, %f]", xEast, yNorth,zUp);
 
     return temp;
-
 }
 
 void obsManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
@@ -145,20 +137,28 @@ void obsManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &m
 
 void carManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
     Car = lla2enu(msg);
-    printf("Car coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", Car->East, Car->North,Car->Up);
+    printf("Car coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", Car->East, Car->North, Car->Up);
 }
 
-void distanceCalculator(encoded car, encoded obs) {
+void distanceCalculator(encoded *car, encoded *obs) {
     float distance;
 
-    //manhattan distance
-    distance = abs(car.North - obs.North) + abs(car.East - obs.East) + abs(car.Up - obs.Up);
+    if (car != NULL && obs != NULL) {
 
-    if (distance >= 5) printf("Safe");
-    else if (1<=distance && distance <5) printf("Unsafe");
-    else if (distance<1) printf("Crash");
-    else printf("Error: distance not correct");
+
+        distance = sqrt(pow((car->North - obs->North),2) + pow((car->East - obs->East),2) + pow((car->Up - obs->Up),2));
+
+        if (distance >= 5) printf("Safe");
+        else if (1 <= distance && distance < 5) printf("Unsafe");
+        else if (distance < 1) printf("Crash");
+        else printf("Error: distance not correct");
+    }
+
+
+    return;
+
 }
+
 
 
 /**
@@ -169,13 +169,19 @@ void distanceCalculator(encoded car, encoded obs) {
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "odometer");
-    //Odometer* odometer = new Odometer;
+    //Odometer odometer = new Odometer();
     Odometer odometer;
 
-    //odometer::distanceCalculator(Car,Obstacle);
+    ros::NodeHandle nh;
+    ros::Subscriber carBag = nh.subscribe("/swiftnav/front/gps_pose", BUFFER_SIZE, carManager);
+    ros::Subscriber obsBag = nh.subscribe("/swiftnav/obs/gps_pose", BUFFER_SIZE, obsManager);
+
+    distanceCalculator(Car, Obstacle);
 
     ros::spin();
 
+
     return 0;
+
 }
 
