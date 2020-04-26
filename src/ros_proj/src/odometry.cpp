@@ -84,6 +84,9 @@ static inline void lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg) {
 
 };
 
+
+
+
 class Odometer {
 
 public:
@@ -98,12 +101,35 @@ public:
 
     Odometer() {
 
-
-        //TODO
-
     };
-};
 
+};
+/**
+* Prende le coordinate dei punti e fa la manhattan distance
+*
+* dovrà prendere in ingresso le coordinate della macchina e dell'ostacolo e fare i conti
+* @return distance
+*/
+float distanceCalculator(){
+    float distance = 0;
+
+    float xc = 0;
+    float yc = 0;
+    float hc = 0;
+    float xo = 0;
+    float yo = 0;
+    float ho = 0;
+
+    //manhattan distance
+    distance = abs(xc - xo) + abs(yc - yo) + abs(hc - ho);
+
+    if (distance >= 5) printf("Safe");
+    else if (1<=distance<5) printf("Unsafe");
+    else if (distance<1) printf("Crash");
+    else printf("Error: distance not correct");
+
+
+}
 
 /**
      * Conversion to ENU

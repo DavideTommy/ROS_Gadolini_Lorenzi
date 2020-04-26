@@ -68,9 +68,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" afterDir="false" />
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="_Added launcher&#10;_fixed obj programming&#10;_TODO manage the 2 subscriber to have a distance">
       <change beforePath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -359,7 +357,7 @@
       <workItem from="1587646348212" duration="5397000" />
       <workItem from="1587651800990" duration="493000" />
       <workItem from="1587857810432" duration="2408000" />
-      <workItem from="1587860246154" duration="3357000" />
+      <workItem from="1587860246154" duration="4379000" />
     </task>
     <task id="LOCAL-00001" summary="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
       <created>1587862820056</created>
@@ -368,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587862820056</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="_Added launcher&#10;_fixed obj programming&#10;_TODO manage the 2 subscriber to have a distance">
+      <created>1587863742190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587863742190</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +393,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented" />
-    <option name="LAST_COMMIT_MESSAGE" value="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented" />
+    <MESSAGE value="_Added launcher&#10;_fixed obj programming&#10;_TODO manage the 2 subscriber to have a distance" />
+    <option name="LAST_COMMIT_MESSAGE" value="_Added launcher&#10;_fixed obj programming&#10;_TODO manage the 2 subscriber to have a distance" />
   </component>
   <component name="WindowStateProjectService">
     <state x="744" y="221" width="926" height="518" key="EnvironmentVariablesDialog" timestamp="1587648289961">
@@ -403,31 +409,31 @@
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog/67.27.1853.958@67.27.1853.958" timestamp="1587646661216" />
-    <state width="1807" height="257" key="GridCell.Tab.0.bottom" timestamp="1587863610415">
+    <state width="1807" height="257" key="GridCell.Tab.0.bottom" timestamp="1587863628292">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.bottom/67.27.1853.988@67.27.1853.988" timestamp="1587863610415" />
-    <state width="1807" height="257" key="GridCell.Tab.0.center" timestamp="1587863610414">
+    <state width="1807" height="257" key="GridCell.Tab.0.bottom/67.27.1853.988@67.27.1853.988" timestamp="1587863628292" />
+    <state width="1807" height="257" key="GridCell.Tab.0.center" timestamp="1587863628291">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.center/67.27.1853.988@67.27.1853.988" timestamp="1587863610414" />
-    <state width="1807" height="257" key="GridCell.Tab.0.left" timestamp="1587863610413">
+    <state width="1807" height="257" key="GridCell.Tab.0.center/67.27.1853.988@67.27.1853.988" timestamp="1587863628291" />
+    <state width="1807" height="257" key="GridCell.Tab.0.left" timestamp="1587863628291">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.left/67.27.1853.988@67.27.1853.988" timestamp="1587863610413" />
-    <state width="1807" height="257" key="GridCell.Tab.0.right" timestamp="1587863610414">
+    <state width="1807" height="257" key="GridCell.Tab.0.left/67.27.1853.988@67.27.1853.988" timestamp="1587863628291" />
+    <state width="1807" height="257" key="GridCell.Tab.0.right" timestamp="1587863628292">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.right/67.27.1853.988@67.27.1853.988" timestamp="1587863610414" />
+    <state width="1807" height="257" key="GridCell.Tab.0.right/67.27.1853.988@67.27.1853.988" timestamp="1587863628292" />
     <state x="124" y="98" width="1384" height="747" key="SettingsEditor" timestamp="1587862964865">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
     <state x="124" y="98" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1587862964865" />
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587862826976">
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587863749409">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1587862826976" />
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1587863749409" />
     <state x="764" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587845741062">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
