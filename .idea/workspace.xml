@@ -68,58 +68,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ros_proj/launch/odometry.launch" afterDir="false" />
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/.catkin" beforeDir="false" afterPath="$PROJECT_DIR$/devel/.catkin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gmock.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gtest/gtest.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googletest-distribution.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/src/Odometer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +100,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ros_proj/cmake-build-debug" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="CMake Application.ros_proj">
     <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
@@ -407,8 +359,16 @@
       <workItem from="1587646348212" duration="5397000" />
       <workItem from="1587651800990" duration="493000" />
       <workItem from="1587857810432" duration="2408000" />
-      <workItem from="1587860246154" duration="2392000" />
+      <workItem from="1587860246154" duration="3357000" />
     </task>
+    <task id="LOCAL-00001" summary="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
+      <created>1587862820056</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587862820056</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +386,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented" />
+    <option name="LAST_COMMIT_MESSAGE" value="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="744" y="221" width="926" height="518" key="EnvironmentVariablesDialog" timestamp="1587648289961">
       <screen x="67" y="27" width="1853" height="958" />
@@ -439,26 +403,31 @@
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog/67.27.1853.958@67.27.1853.958" timestamp="1587646661216" />
-    <state width="1807" height="257" key="GridCell.Tab.0.bottom" timestamp="1587862642935">
+    <state width="1807" height="257" key="GridCell.Tab.0.bottom" timestamp="1587863610415">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.bottom/67.27.1853.988@67.27.1853.988" timestamp="1587862642935" />
-    <state width="1807" height="257" key="GridCell.Tab.0.center" timestamp="1587862642934">
+    <state width="1807" height="257" key="GridCell.Tab.0.bottom/67.27.1853.988@67.27.1853.988" timestamp="1587863610415" />
+    <state width="1807" height="257" key="GridCell.Tab.0.center" timestamp="1587863610414">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.center/67.27.1853.988@67.27.1853.988" timestamp="1587862642934" />
-    <state width="1807" height="257" key="GridCell.Tab.0.left" timestamp="1587862642934">
+    <state width="1807" height="257" key="GridCell.Tab.0.center/67.27.1853.988@67.27.1853.988" timestamp="1587863610414" />
+    <state width="1807" height="257" key="GridCell.Tab.0.left" timestamp="1587863610413">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.left/67.27.1853.988@67.27.1853.988" timestamp="1587862642934" />
-    <state width="1807" height="257" key="GridCell.Tab.0.right" timestamp="1587862642935">
+    <state width="1807" height="257" key="GridCell.Tab.0.left/67.27.1853.988@67.27.1853.988" timestamp="1587863610413" />
+    <state width="1807" height="257" key="GridCell.Tab.0.right" timestamp="1587863610414">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="257" key="GridCell.Tab.0.right/67.27.1853.988@67.27.1853.988" timestamp="1587862642935" />
-    <state x="124" y="96" width="1384" height="747" key="SettingsEditor" timestamp="1587648489629">
-      <screen x="67" y="27" width="1853" height="958" />
+    <state width="1807" height="257" key="GridCell.Tab.0.right/67.27.1853.988@67.27.1853.988" timestamp="1587863610414" />
+    <state x="124" y="98" width="1384" height="747" key="SettingsEditor" timestamp="1587862964865">
+      <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
+    <state x="124" y="98" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1587862964865" />
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587862826976">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1587862826976" />
     <state x="764" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587845741062">
       <screen x="67" y="27" width="1853" height="988" />
     </state>

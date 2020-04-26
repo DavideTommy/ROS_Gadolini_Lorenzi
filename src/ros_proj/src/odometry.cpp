@@ -17,33 +17,7 @@ using namespace std;
 using namespace message_filters;
 
 
-
-class Odometer {
-
-public:
-
-
-
-        /**
-     * Costruttore Classe odometro
-     */
-
-    Odometer() {
-
-
-        //TODO
-
-    };
-};
-
-
-/**
-     * Conversion to ENU
-     * @param msg gps message
-     */
-
-
-static void lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg) {
+static inline void lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg) {
     ROS_INFO("Input position: [%f,%f, %f]", msg->latitude, msg->longitude,msg->altitude);
     // fixed values
 
@@ -110,12 +84,36 @@ static void lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg) {
 
 };
 
+class Odometer {
+
+public:
+    ros::NodeHandle nh;
+    ros::Subscriber carBag = nh.subscribe("/swiftnav/front/gps_pose", FREQUENCY, lla2enu);
+    ros::Subscriber obsBag = nh.subscribe("/swiftnav/obs/gps_pose",FREQUENCY, lla2enu);
+
+
+    /**
+ * Costruttore Classe odometro
+ */
+
+    Odometer() {
+
+
+        //TODO
+
+    };
+};
+
+
+/**
+     * Conversion to ENU
+     * @param msg gps message
+     */
 
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "odometer");
-    ros::NodeHandle nh;
-    ros::Subscriber sub = nh.subscribe("/swiftnav/front/gps_pose", FREQUENCY, lla2enu);
+    Odometer odometer;
 
     ros::spin();
 
