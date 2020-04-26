@@ -20,41 +20,106 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="gmock" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="gtest_main" />
-      <config projectName="ros_proj" targetName="clean_test_results" />
-      <config projectName="ros_proj" targetName="ros_proj" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="gtest" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="doxygen" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="download_extra_data" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_py" />
       <config projectName="ros_proj" targetName="run_tests" />
       <config projectName="ros_proj" targetName="gmock_main" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="ros_proj" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="download_extra_data" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_eus" />
       <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="tests" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_lisp" />
       <config projectName="ros_proj" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="gmock" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="tests" />
+      <config projectName="ros_proj" targetName="gtest_main" />
+      <config projectName="ros_proj" targetName="doxygen" />
+      <config projectName="ros_proj" targetName="clean_test_results" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="gtest" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH= ~/robotics/devel" GENERATION_DIR="~/robotics" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCATKIN_DEVEL_PREFIX:PATH= ~/robotics/devel" GENERATION_DIR="cmake-build-debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="First Bag Reading PT.2">
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ros_proj/launch/odometry.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/.catkin" beforeDir="false" afterPath="$PROJECT_DIR$/devel/.catkin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gmock.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gtest/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googletest-distribution.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/src/Odometer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,17 +132,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1awUqji6YY7NanZIbjaslx69nsr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -87,12 +150,32 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ros_proj/cmake-build-debug" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ros_proj/src" />
-    </key>
-  </component>
   <component name="RunManager" selected="CMake Application.ros_proj">
+    <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actionlib_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -104,6 +187,31 @@
       </method>
     </configuration>
     <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -124,6 +232,31 @@
       </method>
     </configuration>
     <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="nav_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="nav_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="nav_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="nav_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nav_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="nav_msgs_generate_messages_py" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -219,9 +352,24 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_eus" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_nodejs" />
+      <item itemvalue="CMake Application.actionlib_msgs_generate_messages_py" />
       <item itemvalue="CMake Application.clean_test_results" />
       <item itemvalue="CMake Application.download_extra_data" />
       <item itemvalue="CMake Application.doxygen" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_eus" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_nodejs" />
+      <item itemvalue="CMake Application.geometry_msgs_generate_messages_py" />
+      <item itemvalue="CMake Application.nav_msgs_generate_messages_cpp" />
+      <item itemvalue="CMake Application.nav_msgs_generate_messages_eus" />
+      <item itemvalue="CMake Application.nav_msgs_generate_messages_lisp" />
+      <item itemvalue="CMake Application.nav_msgs_generate_messages_nodejs" />
+      <item itemvalue="CMake Application.nav_msgs_generate_messages_py" />
       <item itemvalue="CMake Application.ros_proj" />
       <item itemvalue="CMake Application.roscpp_generate_messages_cpp" />
       <item itemvalue="CMake Application.roscpp_generate_messages_eus" />
@@ -258,43 +406,9 @@
       <updated>1587646343398</updated>
       <workItem from="1587646348212" duration="5397000" />
       <workItem from="1587651800990" duration="493000" />
-      <workItem from="1587652792592" duration="1417000" />
-      <workItem from="1587655712074" duration="575000" />
-      <workItem from="1587801047156" duration="1612000" />
-      <workItem from="1587803639172" duration="3489000" />
-      <workItem from="1587818141729" duration="8436000" />
-      <workItem from="1587828713869" duration="5592000" />
-      <workItem from="1587834583721" duration="53000" />
+      <workItem from="1587857810432" duration="2408000" />
+      <workItem from="1587860246154" duration="2392000" />
     </task>
-    <task id="LOCAL-00001" summary="Setup Pt.1">
-      <created>1587653137449</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1587653137449</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Setup Pt.2">
-      <created>1587804614132</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1587804614132</updated>
-    </task>
-    <task id="LOCAL-00003" summary="First Bag Reading">
-      <created>1587833185023</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1587833185023</updated>
-    </task>
-    <task id="LOCAL-00004" summary="First Bag Reading PT.2">
-      <created>1587833767565</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1587833767565</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,23 +426,7 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Setup Pt.1" />
-    <MESSAGE value="Setup Pt.2" />
-    <MESSAGE value="First Bag Reading" />
-    <MESSAGE value="First Bag Reading PT.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Bag Reading PT.2" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587826184142">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="451" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.958@67.27.1853.958" timestamp="1587826184142" />
-    <state x="726" y="254" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587828014891">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="726" y="254" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.958@67.27.1853.958" timestamp="1587828014891" />
     <state x="744" y="221" width="926" height="518" key="EnvironmentVariablesDialog" timestamp="1587648289961">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
@@ -337,49 +435,37 @@
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="776" y="264" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.958@67.27.1853.958" timestamp="1587648486213" />
-    <state x="599" y="361" width="779" height="288" key="FileDocumentManager.FileCacheConflict" timestamp="1587832021698">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="599" y="361" width="779" height="288" key="FileDocumentManager.FileCacheConflict/67.27.1853.958@67.27.1853.958" timestamp="1587832021698" />
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog" timestamp="1587646661216">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state x="853" y="406" width="543" height="200" key="Github.ShareDialog/67.27.1853.958@67.27.1853.958" timestamp="1587646661216" />
-    <state width="1807" height="247" key="GridCell.Tab.0.bottom" timestamp="1587827552937">
+    <state width="1807" height="257" key="GridCell.Tab.0.bottom" timestamp="1587862642935">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state width="1807" height="257" key="GridCell.Tab.0.bottom/67.27.1853.988@67.27.1853.988" timestamp="1587862642935" />
+    <state width="1807" height="257" key="GridCell.Tab.0.center" timestamp="1587862642934">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state width="1807" height="257" key="GridCell.Tab.0.center/67.27.1853.988@67.27.1853.988" timestamp="1587862642934" />
+    <state width="1807" height="257" key="GridCell.Tab.0.left" timestamp="1587862642934">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state width="1807" height="257" key="GridCell.Tab.0.left/67.27.1853.988@67.27.1853.988" timestamp="1587862642934" />
+    <state width="1807" height="257" key="GridCell.Tab.0.right" timestamp="1587862642935">
+      <screen x="67" y="27" width="1853" height="988" />
+    </state>
+    <state width="1807" height="257" key="GridCell.Tab.0.right/67.27.1853.988@67.27.1853.988" timestamp="1587862642935" />
+    <state x="124" y="96" width="1384" height="747" key="SettingsEditor" timestamp="1587648489629">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
-    <state width="1807" height="247" key="GridCell.Tab.0.bottom/67.27.1853.958@67.27.1853.958" timestamp="1587827552937" />
-    <state width="1807" height="247" key="GridCell.Tab.0.center" timestamp="1587827552935">
-      <screen x="67" y="27" width="1853" height="958" />
+    <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
+    <state x="764" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587845741062">
+      <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="247" key="GridCell.Tab.0.center/67.27.1853.958@67.27.1853.958" timestamp="1587827552935" />
-    <state width="1807" height="247" key="GridCell.Tab.0.left" timestamp="1587827552934">
-      <screen x="67" y="27" width="1853" height="958" />
+    <state x="764" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.988@67.27.1853.988" timestamp="1587845741062" />
+    <state x="826" y="305" width="325" height="429" key="refactoring.ChangeSignatureDialog" timestamp="1587862183016">
+      <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state width="1807" height="247" key="GridCell.Tab.0.left/67.27.1853.958@67.27.1853.958" timestamp="1587827552934" />
-    <state width="1807" height="247" key="GridCell.Tab.0.right" timestamp="1587827552936">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state width="1807" height="247" key="GridCell.Tab.0.right/67.27.1853.958@67.27.1853.958" timestamp="1587827552936" />
-    <state x="573" y="243" width="824" height="526" key="IDE.errors.dialog" timestamp="1587833375594">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="573" y="243" width="824" height="526" key="IDE.errors.dialog/67.27.1853.958@67.27.1853.958" timestamp="1587833375594" />
-    <state x="136" y="109" width="1384" height="747" key="SettingsEditor" timestamp="1587834635793">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="136" y="109" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587834635793" />
-    <state x="506" y="412" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1587833769844">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="506" y="412" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.958@67.27.1853.958" timestamp="1587833769844" />
-    <state x="764" y="420" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587833145588">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="764" y="420" width="458" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.958@67.27.1853.958" timestamp="1587833145588" />
-    <state x="656" y="234" width="670" height="58" key="search.everywhere.popup" timestamp="1587827875504">
-      <screen x="67" y="27" width="1853" height="958" />
-    </state>
-    <state x="656" y="234" width="670" height="58" key="search.everywhere.popup/67.27.1853.958@67.27.1853.958" timestamp="1587827875504" />
+    <state x="826" y="305" width="325" height="429" key="refactoring.ChangeSignatureDialog/67.27.1853.988@67.27.1853.988" timestamp="1587862183016" />
   </component>
 </project>

@@ -407,32 +407,32 @@ std_msgs_generate_messages_py/fast:
 	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/std_msgs_generate_messages_py.dir/build.make ros_proj/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-src/Odometer.o: src/Odometer.cpp.o
+src/odometer.o: src/odometer.cpp.o
 
-.PHONY : src/Odometer.o
+.PHONY : src/odometer.o
 
 # target to build an object file
-src/Odometer.cpp.o:
-	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o
-.PHONY : src/Odometer.cpp.o
+src/odometer.cpp.o:
+	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o
+.PHONY : src/odometer.cpp.o
 
-src/Odometer.i: src/Odometer.cpp.i
+src/odometer.i: src/odometer.cpp.i
 
-.PHONY : src/Odometer.i
+.PHONY : src/odometer.i
 
 # target to preprocess a source file
-src/Odometer.cpp.i:
-	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.i
-.PHONY : src/Odometer.cpp.i
+src/odometer.cpp.i:
+	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.i
+.PHONY : src/odometer.cpp.i
 
-src/Odometer.s: src/Odometer.cpp.s
+src/odometer.s: src/odometer.cpp.s
 
-.PHONY : src/Odometer.s
+.PHONY : src/odometer.s
 
 # target to generate assembly for a file
-src/Odometer.cpp.s:
-	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.s
-.PHONY : src/Odometer.cpp.s
+src/odometer.cpp.s:
+	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.s
+.PHONY : src/odometer.cpp.s
 
 # Help Target
 help:
@@ -463,9 +463,9 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... src/Odometer.o"
-	@echo "... src/Odometer.i"
-	@echo "... src/Odometer.s"
+	@echo "... src/odometer.o"
+	@echo "... src/odometer.i"
+	@echo "... src/odometer.s"
 .PHONY : help
 
 

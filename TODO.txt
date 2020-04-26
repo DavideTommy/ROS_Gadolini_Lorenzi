@@ -35,7 +35,7 @@ EXECUTION:
 NOTA IMPORTANTE
 
 
-Se si necessita di eseguire un file .cpp diverso (ovvero che non sia Odometer.cpp, cambiare il codice di odometer non necessita di cancellazioni), è necessario eliminare la cartella build da robotics, ed editare il file ros_proj/CMakeLists.txt cambiando il nome del file
+Se si necessita di eseguire un file .cpp diverso (ovvero che non sia odometer.cpp, cambiare il codice di odometer non necessita di cancellazioni), è necessario eliminare la cartella build da robotics, ed editare il file ros_proj/CMakeLists.txt cambiando il nome del file
 alla riga add_executrables.
 
 Eliminare la cartella build fa si che non ci siano altri eseguibili vecchi e che tutto il workspace venga generato nuovamente.

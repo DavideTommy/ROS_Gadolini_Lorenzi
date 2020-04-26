@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lorenzo/robotics/src/ros_proj/src/Odometer.cpp
+/home/lorenzo/robotics/src/ros_proj/src/odometry.cpp
 ros/ros.h
 /home/lorenzo/robotics/src/ros_proj/src/ros/ros.h
 std_msgs/String.h

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ros_proj" type="odometry" name = "odometry"/>
+</launch>
