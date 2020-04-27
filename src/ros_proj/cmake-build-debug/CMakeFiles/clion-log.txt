@@ -1,7 +1,7 @@
 /opt/clion-2020.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX:PATH= ~/robotics/devel -G "CodeBlocks - Unix Makefiles" /home/lorenzo/robotics/src/ros_proj
 -- Using CATKIN_DEVEL_PREFIX: /home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel
--- Using CMAKE_PREFIX_PATH: /opt/ros/melodic
--- This workspace overlays: /opt/ros/melodic
+-- Using CMAKE_PREFIX_PATH: /home/lorenzo/robotics/devel;/opt/ros/melodic
+-- This workspace overlays: /home/lorenzo/robotics/devel;/opt/ros/melodic
 -- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
 -- Using PYTHON_EXECUTABLE: /usr/bin/python2
 -- Using Debian Python package layout
@@ -16,6 +16,7 @@
 -- catkin 0.7.23
 -- BUILD_SHARED_LIBS is on
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- ros_proj: 1 messages, 0 services
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/lorenzo/robotics/src/ros_proj/cmake-build-debug

@@ -23,40 +23,52 @@
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_py" />
       <config projectName="ros_proj" targetName="run_tests" />
       <config projectName="ros_proj" targetName="gmock_main" />
+      <config projectName="ros_proj" targetName="ros_proj_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="ros_proj" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="ros_proj_generate_messages" />
+      <config projectName="ros_proj" targetName="ros_proj_geneus" />
+      <config projectName="ros_proj" targetName="ros_proj_genlisp" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="download_extra_data" />
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="ros_proj_generate_messages_py" />
+      <config projectName="ros_proj" targetName="ros_proj_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="tests" />
+      <config projectName="ros_proj" targetName="doxygen" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="std_msgs_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="nav_msgs_generate_messages_lisp" />
       <config projectName="ros_proj" targetName="roscpp_generate_messages_lisp" />
       <config projectName="ros_proj" targetName="roscpp_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="ros_proj_genpy" />
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_lisp" />
       <config projectName="ros_proj" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="ros_proj_gennodejs" />
+      <config projectName="ros_proj" targetName="ros_proj_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="nav_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="ros_proj" targetName="ros_proj_generate_messages_eus" />
       <config projectName="ros_proj" targetName="gmock" />
-      <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="ros_proj_gencpp" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
-      <config projectName="ros_proj" targetName="tests" />
-      <config projectName="ros_proj" targetName="doxygen" />
       <config projectName="ros_proj" targetName="gtest_main" />
       <config projectName="ros_proj" targetName="clean_test_results" />
-      <config projectName="ros_proj" targetName="std_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="gtest" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_cpp" />
+      <config projectName="ros_proj" targetName="_ros_proj_generate_messages_check_deps_customMsg" />
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_cpp" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_lisp" />
       <config projectName="ros_proj" targetName="nav_msgs_generate_messages_py" />
       <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
       <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
@@ -69,24 +81,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="Encoding LLA to ENU and data structures">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ROS.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ros_proj/msg/customMsg.msg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custom_msg.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custom_msg.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/DependInfo.cmake" afterDir="false" />
@@ -94,44 +95,11 @@
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ros_proj/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_proj.pc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_proj.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/package.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/pkg.develspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/pkg.develspace.context.pc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/pkg.installspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/pkg.installspace.context.pc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/stamps/ros_proj/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/stamps/ros_proj/package.xml.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/cmake/ros_proj-genmsg.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/cmake/ros_proj-genmsg.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/include/ros_proj/custom_msg.h" beforeDir="false" afterPath="$PROJECT_DIR$/devel/include/ros_proj/custom_msg.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/lib/pkgconfig/ros_proj.pc" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/pkgconfig/ros_proj.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/lib/python2.7/dist-packages/ros_proj/msg/_custom_msg.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/python2.7/dist-packages/ros_proj/msg/_custom_msg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package_custom_msg.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package_custom_msg.lisp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/custom_msg.js" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/custom_msg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/roseus/ros/ros_proj/msg/custom_msg.l" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/roseus/ros/ros_proj/msg/custom_msg.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/install/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install/env.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/include/ros_proj/custom_msg.h" beforeDir="false" afterPath="$PROJECT_DIR$/install/include/ros_proj/custom_msg.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/lib/python2.7/dist-packages/ros_proj/msg/_custom_msg.py" beforeDir="false" afterPath="$PROJECT_DIR$/install/lib/python2.7/dist-packages/ros_proj/msg/_custom_msg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/_package_custom_msg.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/_package_custom_msg.lisp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/gennodejs/ros/ros_proj/msg/custom_msg.js" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/gennodejs/ros/ros_proj/msg/custom_msg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/ros_proj/msg/custom_msg.msg" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/ros_proj/msg/custom_msg.msg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/roseus/ros/ros_proj/msg/custom_msg.l" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/roseus/ros/ros_proj/msg/custom_msg.l" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
@@ -140,21 +108,28 @@
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/ros_proj.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_proj.pc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_proj.pc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/package.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/pkg.develspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/pkg.develspace.context.pc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/pkg.installspace.context.pc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/pkg.installspace.context.pc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/ros_proj-msg-extras.cmake.develspace.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/ros_proj-msg-extras.cmake.develspace.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/ros_proj-msg-extras.cmake.installspace.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/ros_proj-msg-extras.cmake.installspace.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/package.xml.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/cmake/ros_proj-genmsg.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/cmake/ros_proj-genmsg.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/pkgconfig/ros_proj.pc" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/pkgconfig/ros_proj.pc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
@@ -162,11 +137,7 @@
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googlemock/gtest/gtest.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/gtest/googletest-distribution.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/ros_proj.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/launch/odometry.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/launch/odometry.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/msg/custom_msg.msg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/src/distance_service.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/src/distance_service.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,6 +172,11 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="CMake Application.ros_proj">
+    <configuration name="_ros_proj_generate_messages_check_deps_customMsg" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="_ros_proj_generate_messages_check_deps_customMsg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -316,6 +292,61 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ros_proj_gencpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_gencpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_generate_messages" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_generate_messages" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_generate_messages_cpp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_generate_messages_eus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_generate_messages_lisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_generate_messages_py" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_geneus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_geneus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_genlisp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_genlisp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_gennodejs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_gennodejs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ros_proj_genpy" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="ros_proj_genpy" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -402,6 +433,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application._ros_proj_generate_messages_check_deps_customMsg" />
       <item itemvalue="CMake Application.actionlib_msgs_generate_messages_cpp" />
       <item itemvalue="CMake Application.actionlib_msgs_generate_messages_eus" />
       <item itemvalue="CMake Application.actionlib_msgs_generate_messages_lisp" />
@@ -421,6 +453,17 @@
       <item itemvalue="CMake Application.nav_msgs_generate_messages_nodejs" />
       <item itemvalue="CMake Application.nav_msgs_generate_messages_py" />
       <item itemvalue="CMake Application.ros_proj" />
+      <item itemvalue="CMake Application.ros_proj_gencpp" />
+      <item itemvalue="CMake Application.ros_proj_generate_messages" />
+      <item itemvalue="CMake Application.ros_proj_generate_messages_cpp" />
+      <item itemvalue="CMake Application.ros_proj_generate_messages_eus" />
+      <item itemvalue="CMake Application.ros_proj_generate_messages_lisp" />
+      <item itemvalue="CMake Application.ros_proj_generate_messages_nodejs" />
+      <item itemvalue="CMake Application.ros_proj_generate_messages_py" />
+      <item itemvalue="CMake Application.ros_proj_geneus" />
+      <item itemvalue="CMake Application.ros_proj_genlisp" />
+      <item itemvalue="CMake Application.ros_proj_gennodejs" />
+      <item itemvalue="CMake Application.ros_proj_genpy" />
       <item itemvalue="CMake Application.roscpp_generate_messages_cpp" />
       <item itemvalue="CMake Application.roscpp_generate_messages_eus" />
       <item itemvalue="CMake Application.roscpp_generate_messages_lisp" />
@@ -464,6 +507,7 @@
       <workItem from="1587828713869" duration="5592000" />
       <workItem from="1587834583721" duration="363000" />
       <workItem from="1587891537070" duration="4544000" />
+      <workItem from="1588027268328" duration="524000" />
     </task>
     <task id="LOCAL-00001" summary="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
       <created>1587862820056</created>

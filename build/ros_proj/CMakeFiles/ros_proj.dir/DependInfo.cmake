@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lorenzo/robotics/src/ros_proj/src/Odometer.cpp" "/home/lorenzo/robotics/build/ros_proj/CMakeFiles/ros_proj.dir/src/Odometer.cpp.o"
+  "/home/lorenzo/robotics/src/ros_proj/src/odometry.cpp" "/home/lorenzo/robotics/build/ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o"
+  "/home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp" "/home/lorenzo/robotics/build/ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

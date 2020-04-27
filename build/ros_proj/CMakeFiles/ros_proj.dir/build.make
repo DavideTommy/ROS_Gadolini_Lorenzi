@@ -57,38 +57,64 @@ include ros_proj/CMakeFiles/ros_proj.dir/progress.make
 # Include the compile flags for this target's objects.
 include ros_proj/CMakeFiles/ros_proj.dir/flags.make
 
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o: ros_proj/CMakeFiles/ros_proj.dir/flags.make
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o: /home/lorenzo/robotics/src/ros_proj/src/odometer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o"
-	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ros_proj.dir/src/odometer.cpp.o -c /home/lorenzo/robotics/src/ros_proj/src/odometer.cpp
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o: ros_proj/CMakeFiles/ros_proj.dir/flags.make
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o: /home/lorenzo/robotics/src/ros_proj/src/odometry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o"
+	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ros_proj.dir/src/odometry.cpp.o -c /home/lorenzo/robotics/src/ros_proj/src/odometry.cpp
 
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros_proj.dir/src/odometer.cpp.i"
-	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lorenzo/robotics/src/ros_proj/src/odometer.cpp > CMakeFiles/ros_proj.dir/src/odometer.cpp.i
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros_proj.dir/src/odometry.cpp.i"
+	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lorenzo/robotics/src/ros_proj/src/odometry.cpp > CMakeFiles/ros_proj.dir/src/odometry.cpp.i
 
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros_proj.dir/src/odometer.cpp.s"
-	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzo/robotics/src/ros_proj/src/odometer.cpp -o CMakeFiles/ros_proj.dir/src/odometer.cpp.s
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros_proj.dir/src/odometry.cpp.s"
+	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzo/robotics/src/ros_proj/src/odometry.cpp -o CMakeFiles/ros_proj.dir/src/odometry.cpp.s
 
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.requires:
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.requires:
 
-.PHONY : ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.requires
+.PHONY : ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.requires
 
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.provides: ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.requires
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.provides.build
-.PHONY : ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.provides
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.provides: ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.requires
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.provides.build
+.PHONY : ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.provides
 
-ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.provides.build: ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o
+ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.provides.build: ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o
+
+
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o: ros_proj/CMakeFiles/ros_proj.dir/flags.make
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o: /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o"
+	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o -c /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp
+
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros_proj.dir/src/rosMaster.cpp.i"
+	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp > CMakeFiles/ros_proj.dir/src/rosMaster.cpp.i
+
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros_proj.dir/src/rosMaster.cpp.s"
+	cd /home/lorenzo/robotics/build/ros_proj && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp -o CMakeFiles/ros_proj.dir/src/rosMaster.cpp.s
+
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.requires:
+
+.PHONY : ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.requires
+
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.provides: ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.requires
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.provides.build
+.PHONY : ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.provides
+
+ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.provides.build: ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o
 
 
 # Object files for target ros_proj
 ros_proj_OBJECTS = \
-"CMakeFiles/ros_proj.dir/src/odometer.cpp.o"
+"CMakeFiles/ros_proj.dir/src/odometry.cpp.o" \
+"CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o"
 
 # External object files for target ros_proj
 ros_proj_EXTERNAL_OBJECTS =
 
-/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: ros_proj/CMakeFiles/ros_proj.dir/build.make
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libroscpp.so
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -109,7 +135,7 @@ ros_proj_EXTERNAL_OBJECTS =
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: ros_proj/CMakeFiles/ros_proj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj"
 	cd /home/lorenzo/robotics/build/ros_proj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ros_proj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -117,7 +143,8 @@ ros_proj/CMakeFiles/ros_proj.dir/build: /home/lorenzo/robotics/devel/lib/ros_pro
 
 .PHONY : ros_proj/CMakeFiles/ros_proj.dir/build
 
-ros_proj/CMakeFiles/ros_proj.dir/requires: ros_proj/CMakeFiles/ros_proj.dir/src/odometer.cpp.o.requires
+ros_proj/CMakeFiles/ros_proj.dir/requires: ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o.requires
+ros_proj/CMakeFiles/ros_proj.dir/requires: ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o.requires
 
 .PHONY : ros_proj/CMakeFiles/ros_proj.dir/requires
 
