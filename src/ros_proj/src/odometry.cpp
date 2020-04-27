@@ -10,6 +10,8 @@
 #include <sensor_msgs/NavSatFix.h>
 #include <tf/transform_broadcaster.h>
 #include <malloc.h>
+#include "nav_msgs/Odometry.h"
+#include "ros_proj/customMsg.h"
 
 #define BUFFER_SIZE 50
 struct encoded {

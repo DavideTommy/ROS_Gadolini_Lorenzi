@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/lorenzo/robotics/devel/include/ros_proj/customMsg.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/lorenzo/robotics/src/ros_proj/src/odometry.cpp
 ros/ros.h
 /home/lorenzo/robotics/src/ros_proj/src/ros/ros.h
@@ -31,6 +47,10 @@ tf/transform_broadcaster.h
 -
 malloc.h
 -
+nav_msgs/Odometry.h
+/home/lorenzo/robotics/src/ros_proj/src/nav_msgs/Odometry.h
+ros_proj/customMsg.h
+/home/lorenzo/robotics/src/ros_proj/src/ros_proj/customMsg.h
 
 /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp
 

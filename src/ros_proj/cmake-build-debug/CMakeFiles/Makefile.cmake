@@ -141,6 +141,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgs-msg-extras.cmake"
   "/opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig-version.cmake"
   "/opt/ros/melodic/share/geometry_msgs/cmake/geometry_msgsConfig.cmake"
+  "/opt/ros/melodic/share/message_filters/cmake/message_filtersConfig-version.cmake"
+  "/opt/ros/melodic/share/message_filters/cmake/message_filtersConfig.cmake"
   "/opt/ros/melodic/share/message_generation/cmake/message_generationConfig-version.cmake"
   "/opt/ros/melodic/share/message_generation/cmake/message_generationConfig.cmake"
   "/opt/ros/melodic/share/message_runtime/cmake/message_runtimeConfig-version.cmake"

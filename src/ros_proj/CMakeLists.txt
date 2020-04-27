@@ -12,6 +12,7 @@ project(ros_proj)
           std_msgs
           nav_msgs
           message_generation
+          message_filters
           )
 
 
@@ -112,6 +113,7 @@ catkin_package(
         rospy
         std_msgs
         message_runtime
+        message_filters
         nav_msgs
  # DEPENDS system_lib
 )
@@ -123,8 +125,8 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
-  ${catkin_INCLUDE_DIRS}
+ include ${catkin_INCLUDE_DIRS}
+
 )
 
 ## Declare a C++ library
@@ -151,7 +153,8 @@ add_executable(ros_proj src/odometry.cpp src/rosMaster.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
- add_dependencies(ros_proj ros_proj_generate_messages_cpp)
+# è possibile sostituire ros_proj_generate_message_cpp
+ add_dependencies(ros_proj ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(ros_proj

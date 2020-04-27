@@ -131,5 +131,6 @@ CMakeFiles/ros_proj.dir/src/odometry.cpp.o
  /opt/ros/melodic/include/tf2_ros/transform_broadcaster.h
  /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
+ devel/include/ros_proj/customMsg.h
 CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o
  /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp
