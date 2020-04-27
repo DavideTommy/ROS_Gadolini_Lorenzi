@@ -74,7 +74,7 @@ if("TRUE" STREQUAL "TRUE")
 else()
   set(ros_proj_SOURCE_PREFIX "")
   set(ros_proj_DEVEL_PREFIX "")
-  set(ros_proj_INSTALL_PREFIX /usr/local)
+  set(ros_proj_INSTALL_PREFIX /home/lorenzo/robotics/install)
   set(ros_proj_PREFIX ${ros_proj_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ros_proj_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/lorenzo/robotics/devel/include " STREQUAL " ")
   set(ros_proj_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/lorenzo/robotics/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lorenzo/robotics/devel/lib;/home/lorenzo/robotics/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/lorenzo/robotics/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(ros_proj_EXPORTED_TARGETS "")
+set(ros_proj_EXPORTED_TARGETS "ros_proj_generate_messages_cpp;ros_proj_generate_messages_eus;ros_proj_generate_messages_lisp;ros_proj_generate_messages_nodejs;ros_proj_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${ros_proj_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${ros_proj_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs")
+set(depends "roscpp;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND ros_proj_EXPORTED_TARGETS ${${ros_proj_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "ros_proj-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${ros_proj_DIR}/${extra})

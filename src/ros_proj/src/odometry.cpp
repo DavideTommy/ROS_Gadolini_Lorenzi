@@ -10,8 +10,10 @@
 #include <sensor_msgs/NavSatFix.h>
 #include <tf/transform_broadcaster.h>
 #include <malloc.h>
+#include "ros_proj/custom_msg.h"
 
 #define BUFFER_SIZE 50
+
 struct encoded {
 
     float North;
@@ -20,9 +22,12 @@ struct encoded {
 
 };
 
-static struct encoded *Car;
-static struct encoded *Obstacle;
+static struct encoded *vehicle;
 
+//fixed position of the car
+float latitude_init;
+float longitude_init;
+float h0;
 
 static struct encoded *lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
@@ -30,7 +35,7 @@ void carManager(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
 void obsManager(const sensor_msgs::NavSatFix::ConstPtr &msg);
 
-
+void fillPoPosition();
 
 class Odometer {
 
@@ -49,6 +54,8 @@ public:
     };
 };
 
+class custom_msg;
+
 /**
     * Prende le coordinate dei punti e fa la manhattan distance
     *
@@ -59,7 +66,7 @@ public:
 
 struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
-    //ROS_INFO("Input position: [%f,%f, %f]", msg->latitude, msg->longitude,msg->altitude);
+    ROS_INFO("Input position: [%f,%f, %f]", msg->latitude, msg->longitude,msg->altitude);
     // fixed values
 
     double a = 6378137;
@@ -72,12 +79,6 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     float latitude = msg->latitude;
     float longitude = msg->longitude;
     float h = msg->altitude;
-
-    // fixed position
-    float latitude_init = 45.6311926152;
-    float longitude_init = 9.2947495255;
-    float h0 = 231.506675163;
-
 
     //lla to ecef
     float lamb = deg_to_rad * (latitude);
@@ -129,37 +130,16 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     return temp;
 }
 
-void obsManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
-
-    Obstacle = lla2enu(msg);
-    printf("Obstacle Coords: N %f E %f U %f \n", Obstacle->North, Obstacle->East, Obstacle->Up);
-}
-
-void carManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
-    Car = lla2enu(msg);
-    printf("Car coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", Car->East, Car->North, Car->Up);
-}
-
-void distanceCalculator(encoded *car, encoded *obs) {
-    float distance;
-
-    if (car != NULL && obs != NULL) {
+void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
 
-        distance = sqrt(pow((car->North - obs->North),2) + pow((car->East - obs->East),2) + pow((car->Up - obs->Up),2));
-
-        if (distance >= 5) printf("Safe");
-        else if (1 <= distance && distance < 5) printf("Unsafe");
-        else if (distance < 1) printf("Crash");
-        else printf("Error: distance not correct");
-    }
 
 
-    return;
+    vehicle = lla2enu(msg);
+    //printf("Vehicle coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", vehicle->East, vehicle->North, vehicle->Up);
+
 
 }
-
-
 
 /**
      * Conversion to ENU
@@ -168,20 +148,20 @@ void distanceCalculator(encoded *car, encoded *obs) {
 
 int main(int argc, char **argv) {
 
-    ros::init(argc, argv, "odometer");
-    //Odometer odometer = new Odometer();
+    ros::init(argc, argv, "my_node");
     Odometer odometer;
 
-    ros::NodeHandle nh;
-    ros::Subscriber carBag = nh.subscribe("/swiftnav/front/gps_pose", BUFFER_SIZE, carManager);
-    ros::Subscriber obsBag = nh.subscribe("/swiftnav/obs/gps_pose", BUFFER_SIZE, obsManager);
+    latitude_init = atof(argv[0]);
+    longitude_init = atof(argv[1]);
+    h0 = atof(argv[2]);
 
-    distanceCalculator(Car, Obstacle);
+
+    ros::NodeHandle nh;
+    ros::Subscriber bagTopic = nh.subscribe(argv[3], BUFFER_SIZE, topicManager);
+    ros::Publisher encodedTopic = nh.advertise<ros_proj::custom_msg>("name", BUFFER_SIZE)  //TODO: impostare selezione di topic dinamico e creare custom message
 
     ros::spin();
-
 
     return 0;
 
 }
-

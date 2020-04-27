@@ -16,6 +16,7 @@
 -- catkin 0.7.23
 -- BUILD_SHARED_LIBS is on
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- ros_proj: 1 messages, 0 services
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/lorenzo/robotics/src/ros_proj/cmake-build-debug
