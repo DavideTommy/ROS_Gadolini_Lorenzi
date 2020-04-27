@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/lorenzo/robotics/build
 include ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custom_msg.dir/progress.make
 
 ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custom_msg:
-	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ros_proj /home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg 
+	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py ros_proj /home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg std_msgs/Header
 
 _ros_proj_generate_messages_check_deps_custom_msg: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custom_msg
 _ros_proj_generate_messages_check_deps_custom_msg: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custom_msg.dir/build.make

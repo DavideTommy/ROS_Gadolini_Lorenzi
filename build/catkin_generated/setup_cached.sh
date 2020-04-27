@@ -7,9 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/lorenzo/robotics/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/lorenzo/robotics/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/lorenzo/robotics/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/lorenzo/robotics/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/lorenzo/robotics/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/lorenzo/robotics/src:/home/lorenzo/robotics/src/ros_proj:$ROS_PACKAGE_PATH"

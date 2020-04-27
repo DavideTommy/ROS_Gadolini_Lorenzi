@@ -19,7 +19,7 @@ add_custom_target(ros_proj_generate_messages ALL)
 
 get_filename_component(_filename "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg" NAME_WE)
 add_custom_target(_ros_proj_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_proj" "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_proj" "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg" "std_msgs/Header"
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_ros_proj_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(ros_proj
   "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_proj
 )
 
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_proj_generate_messages_cpp)
 _generate_msg_eus(ros_proj
   "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ros_proj
 )
 
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_proj_generate_messages_eus)
 _generate_msg_lisp(ros_proj
   "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_proj
 )
 
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_proj_generate_messages_lisp)
 _generate_msg_nodejs(ros_proj
   "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ros_proj
 )
 
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_proj_generate_messages_nodejs)
 _generate_msg_py(ros_proj
   "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_proj
 )
 

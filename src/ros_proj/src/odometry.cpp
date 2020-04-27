@@ -10,10 +10,8 @@
 #include <sensor_msgs/NavSatFix.h>
 #include <tf/transform_broadcaster.h>
 #include <malloc.h>
-#include "ros_proj/custom_msg.h"
 
 #define BUFFER_SIZE 50
-
 struct encoded {
 
     float North;

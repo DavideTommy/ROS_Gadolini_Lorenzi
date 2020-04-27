@@ -5,17 +5,35 @@ python3 = True if sys.hexversion > 0x03000000 else False
 import genpy
 import struct
 
+import std_msgs.msg
 
 class custom_msg(genpy.Message):
-  _md5sum = "b7b02c3dfba0b2b08c53eb019d9e8b34"
+  _md5sum = "3539ef97bcaedc9ae34172e0c5780202"
   _type = "ros_proj/custom_msg"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """float32 latitude
+  _full_text = """Header custom_msg
+float32 latitude
 float32 longitude
 float32 altitude
-string vehicleType"""
-  __slots__ = ['latitude','longitude','altitude','vehicleType']
-  _slot_types = ['float32','float32','float32','string']
+string vehicleType
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+  __slots__ = ['custom_msg','latitude','longitude','altitude','vehicleType']
+  _slot_types = ['std_msgs/Header','float32','float32','float32','string']
 
   def __init__(self, *args, **kwds):
     """
@@ -25,7 +43,7 @@ string vehicleType"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       latitude,longitude,altitude,vehicleType
+       custom_msg,latitude,longitude,altitude,vehicleType
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -34,6 +52,8 @@ string vehicleType"""
     if args or kwds:
       super(custom_msg, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
+      if self.custom_msg is None:
+        self.custom_msg = std_msgs.msg.Header()
       if self.latitude is None:
         self.latitude = 0.
       if self.longitude is None:
@@ -43,6 +63,7 @@ string vehicleType"""
       if self.vehicleType is None:
         self.vehicleType = ''
     else:
+      self.custom_msg = std_msgs.msg.Header()
       self.latitude = 0.
       self.longitude = 0.
       self.altitude = 0.
@@ -61,6 +82,14 @@ string vehicleType"""
     """
     try:
       _x = self
+      buff.write(_get_struct_3I().pack(_x.custom_msg.seq, _x.custom_msg.stamp.secs, _x.custom_msg.stamp.nsecs))
+      _x = self.custom_msg.frame_id
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
+      _x = self
       buff.write(_get_struct_3f().pack(_x.latitude, _x.longitude, _x.altitude))
       _x = self.vehicleType
       length = len(_x)
@@ -77,7 +106,22 @@ string vehicleType"""
     :param str: byte array of serialized message, ``str``
     """
     try:
+      if self.custom_msg is None:
+        self.custom_msg = std_msgs.msg.Header()
       end = 0
+      _x = self
+      start = end
+      end += 12
+      (_x.custom_msg.seq, _x.custom_msg.stamp.secs, _x.custom_msg.stamp.nsecs,) = _get_struct_3I().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.custom_msg.frame_id = str[start:end].decode('utf-8')
+      else:
+        self.custom_msg.frame_id = str[start:end]
       _x = self
       start = end
       end += 12
@@ -104,6 +148,14 @@ string vehicleType"""
     """
     try:
       _x = self
+      buff.write(_get_struct_3I().pack(_x.custom_msg.seq, _x.custom_msg.stamp.secs, _x.custom_msg.stamp.nsecs))
+      _x = self.custom_msg.frame_id
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
+      _x = self
       buff.write(_get_struct_3f().pack(_x.latitude, _x.longitude, _x.altitude))
       _x = self.vehicleType
       length = len(_x)
@@ -121,7 +173,22 @@ string vehicleType"""
     :param numpy: numpy python module
     """
     try:
+      if self.custom_msg is None:
+        self.custom_msg = std_msgs.msg.Header()
       end = 0
+      _x = self
+      start = end
+      end += 12
+      (_x.custom_msg.seq, _x.custom_msg.stamp.secs, _x.custom_msg.stamp.nsecs,) = _get_struct_3I().unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.custom_msg.frame_id = str[start:end].decode('utf-8')
+      else:
+        self.custom_msg.frame_id = str[start:end]
       _x = self
       start = end
       end += 12
@@ -143,6 +210,12 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
+_struct_3I = None
+def _get_struct_3I():
+    global _struct_3I
+    if _struct_3I is None:
+        _struct_3I = struct.Struct("<3I")
+    return _struct_3I
 _struct_3f = None
 def _get_struct_3f():
     global _struct_3f

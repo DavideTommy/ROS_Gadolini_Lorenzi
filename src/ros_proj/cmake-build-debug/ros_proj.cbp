@@ -5,7 +5,7 @@
 		<Option title="ros_proj"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\src\;CMake Files\..\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\opt\ros\melodic\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\cpp_common\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_runtime\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rostime\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rostime\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosconsole\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gencpp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geneus\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genlisp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gennodejs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genpy\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_generation\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_generation\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;CMake Files\cmake-build-debug\devel\;CMake Files\cmake-build-debug\devel\share\;CMake Files\cmake-build-debug\devel\share\ros_proj\;CMake Files\cmake-build-debug\devel\share\ros_proj\cmake\;CMake Files\cmake-build-debug\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\src\;CMake Files\..\..\..\..\..\usr\src\googletest\;CMake Files\..\..\..\..\..\usr\src\googletest\googlemock\;CMake Files\..\..\..\..\..\usr\src\googletest\googletest\;CMake Files\..\..\..\..\..\usr\src\googletest\googletest\cmake\;CMake Files\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\opt\ros\;CMake Files\..\..\..\..\..\opt\ros\melodic\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\platform\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\test\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\tools\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\templates\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\catkin\cmake\em\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\cpp_common\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\cpp_common\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_runtime\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_runtime\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_serialization\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\roscpp_traits\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rostime\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rostime\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosconsole\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosconsole\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\rosgraph_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\xmlrpcpp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\nav_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geometry_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\actionlib_msgs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gencpp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geneus\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\geneus\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genlisp\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genlisp\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gennodejs\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\gennodejs\cmake\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genpy\;CMake Files\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\catkin\;CMake Files\cmake-build-debug\catkin\catkin_generated\;CMake Files\cmake-build-debug\catkin\catkin_generated\version\;CMake Files\cmake-build-debug\catkin_generated\;CMake Files\cmake-build-debug\catkin_generated\installspace\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
@@ -17,11 +17,21 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install/local">
+			<Target title="install/strip">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -47,6 +57,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ros_proj">
 				<Option output="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/ros_proj/ros_proj" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/ros_proj"/>
@@ -57,7 +77,6 @@
 					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
 					<Add option="-DROS_PACKAGE_NAME=&quot;ros_proj&quot;"/>
 					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/include"/>
 					<Add directory="/opt/ros/melodic/include"/>
 					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -86,7 +105,6 @@
 					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
 					<Add option="-DROS_PACKAGE_NAME=&quot;ros_proj&quot;"/>
 					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/include"/>
 					<Add directory="/opt/ros/melodic/include"/>
 					<Add directory="/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"/>
 					<Add directory="/usr/include/c++/7"/>
@@ -105,101 +123,251 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ros_proj_genpy">
+			<Target title="actionlib_msgs_generate_messages_nodejs">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_genpy"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_nodejs"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install/strip">
+			<Target title="actionlib_msgs_generate_messages_lisp">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_lisp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="nav_msgs_generate_messages_eus">
+			<Target title="geometry_msgs_generate_messages_py">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_eus"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_py"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="roscpp_generate_messages_lisp">
+			<Target title="geometry_msgs_generate_messages_cpp">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_lisp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_cpp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rosgraph_msgs_generate_messages_py">
+			<Target title="install/local">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rosgraph_msgs_generate_messages_lisp">
+			<Target title="nav_msgs_generate_messages_py">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_lisp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_py"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="tests">
+			<Target title="nav_msgs_generate_messages_nodejs">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_nodejs"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="roscpp_generate_messages_nodejs">
+			<Target title="install">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_nodejs"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rosgraph_msgs_generate_messages_nodejs">
+			<Target title="nav_msgs_generate_messages_lisp">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_nodejs"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_lisp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="nav_msgs_generate_messages_cpp">
+			<Target title="roscpp_generate_messages_py">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_cpp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rosgraph_msgs_generate_messages_eus">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clean_test_results">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean_test_results"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_nodejs">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_nodejs"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_msgs_generate_messages_py">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_py"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_eus">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_cpp">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_cpp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="roscpp_generate_messages_eus">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="download_extra_data">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 download_extra_data"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometry_msgs_generate_messages_lisp">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_lisp">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_lisp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="actionlib_msgs_generate_messages_eus">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_eus"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doxygen">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 doxygen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run_tests">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 run_tests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="std_msgs_generate_messages_cpp">
+				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_cpp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -225,301 +393,71 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="std_msgs_generate_messages_cpp">
+			<Target title="nav_msgs_generate_messages_cpp">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_cpp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_cpp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="run_tests">
+			<Target title="rosgraph_msgs_generate_messages_nodejs">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 run_tests"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_nodejs"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="doxygen">
+			<Target title="roscpp_generate_messages_nodejs">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 doxygen"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_nodejs"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="actionlib_msgs_generate_messages_eus">
+			<Target title="tests">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_eus"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 tests"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="install">
+			<Target title="rosgraph_msgs_generate_messages_lisp">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_lisp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="std_msgs_generate_messages_lisp">
+			<Target title="rosgraph_msgs_generate_messages_py">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_lisp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="geometry_msgs_generate_messages_lisp">
+			<Target title="roscpp_generate_messages_lisp">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="download_extra_data">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 download_extra_data"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="list_install_components">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_eus">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_cpp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_eus">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_py">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_generate_messages">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_generate_messages"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="clean_test_results">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean_test_results"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_genlisp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_genlisp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rosgraph_msgs_generate_messages_eus">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="roscpp_generate_messages_py">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="nav_msgs_generate_messages_lisp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="nav_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_py">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="nav_msgs_generate_messages_py">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_cpp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_cpp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="std_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="geometry_msgs_generate_messages_py">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 geometry_msgs_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_lisp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="actionlib_msgs_generate_messages_nodejs">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 actionlib_msgs_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_generate_messages_cpp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_generate_messages_cpp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 roscpp_generate_messages_lisp"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -535,81 +473,21 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ros_proj_gencpp">
+			<Target title="std_msgs_generate_messages_py">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_gencpp"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 std_msgs_generate_messages_py"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ros_proj_generate_messages_eus">
+			<Target title="nav_msgs_generate_messages_eus">
 				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_generate_messages_eus"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_generate_messages_py">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_generate_messages_py"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_geneus">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_geneus"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="_ros_proj_generate_messages_check_deps_custom_msg">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 _ros_proj_generate_messages_check_deps_custom_msg"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_generate_messages_lisp">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_generate_messages_lisp"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_generate_messages_nodejs">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_generate_messages_nodejs"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ros_proj_gennodejs">
-				<Option working_dir="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 ros_proj_gennodejs"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 nav_msgs_generate_messages_eus"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -833,6 +711,9 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/src/odometry.cpp">
+			<Option target="ros_proj"/>
+		</Unit>
+		<Unit filename="/home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp">
 			<Option target="ros_proj"/>
 		</Unit>
 		<Unit filename="/usr/src/googletest/googlemock/src/gmock-all.cc">
@@ -1096,9 +977,6 @@
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/std_msgs/cmake/std_msgs-msg-extras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\"/>
 		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/std_msgs/cmake/std_msgs-msg-paths.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\"/>
-		</Unit>
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/std_msgs/cmake/std_msgsConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\std_msgs\cmake\"/>
 		</Unit>
@@ -1153,21 +1031,6 @@
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genmsg/cmake/genmsgConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
 		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genmsg/cmake/pkg-genmsg.cmake.em">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genmsg/cmake/pkg-genmsg.context.in">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genmsg/cmake/pkg-msg-extras.cmake.in">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genmsg/cmake/pkg-msg-paths.cmake.develspace.in">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genmsg/cmake/pkg-msg-paths.cmake.installspace.in">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genmsg\cmake\"/>
-		</Unit>
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/gencpp/cmake/gencpp-extras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\gencpp\cmake\"/>
 		</Unit>
@@ -1213,12 +1076,6 @@
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/genpy/cmake/genpyConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\genpy\cmake\"/>
 		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/message_generation/cmake/message_generationConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_generation\cmake\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/../../../../../opt/ros/melodic/share/message_generation/cmake/message_generationConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ros\melodic\share\message_generation\cmake\"/>
-		</Unit>
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin/catkin_generated/version/package.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\catkin\catkin_generated\version\"/>
 		</Unit>
@@ -1228,20 +1085,8 @@
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin_generated/package.cmake">
 			<Option virtualFolder="CMake Files\cmake-build-debug\catkin_generated\"/>
 		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin_generated/ros_proj-msg-extras.cmake.develspace.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\catkin_generated\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin_generated/ros_proj-msg-extras.cmake.installspace.in">
-			<Option virtualFolder="CMake Files\cmake-build-debug\catkin_generated\"/>
-		</Unit>
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py">
 			<Option virtualFolder="CMake Files\cmake-build-debug\catkin_generated\installspace\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_proj-msg-paths.cmake">
-			<Option virtualFolder="CMake Files\cmake-build-debug\devel\share\ros_proj\cmake\"/>
-		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/cmake/ros_proj-genmsg.cmake">
-			<Option virtualFolder="CMake Files\cmake-build-debug\cmake\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

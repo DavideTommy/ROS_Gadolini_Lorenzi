@@ -58,6 +58,7 @@ ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs: /home/lorenzo/robotics/de
 
 /home/lorenzo/robotics/devel/share/gennodejs/ros/ros_proj/msg/custom_msg.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/lorenzo/robotics/devel/share/gennodejs/ros/ros_proj/msg/custom_msg.js: /home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg
+/home/lorenzo/robotics/devel/share/gennodejs/ros/ros_proj/msg/custom_msg.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from ros_proj/custom_msg.msg"
 	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/share/gennodejs/ros/ros_proj/msg
 

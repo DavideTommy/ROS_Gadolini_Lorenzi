@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ros_proj_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/include " STREQUAL " ")
+if(NOT " " STREQUAL " ")
   set(ros_proj_INCLUDE_DIRS "")
-  set(_include_dirs "/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/include")
+  set(_include_dirs "")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(ros_proj_EXPORTED_TARGETS "ros_proj_generate_messages_cpp;ros_proj_generate_messages_eus;ros_proj_generate_messages_lisp;ros_proj_generate_messages_nodejs;ros_proj_generate_messages_py")
+set(ros_proj_EXPORTED_TARGETS "")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${ros_proj_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${ros_proj_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs;message_runtime")
+set(depends "roscpp;rospy;std_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND ros_proj_EXPORTED_TARGETS ${${ros_proj_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "ros_proj-msg-extras.cmake")
+set(pkg_cfg_extras "")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${ros_proj_DIR}/${extra})

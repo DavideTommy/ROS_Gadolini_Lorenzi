@@ -10,26 +10,37 @@
 
 (in-package "ROS")
 ;;//! \htmlinclude custom_msg.msg.html
+(if (not (find-package "STD_MSGS"))
+  (ros::roseus-add-msgs "std_msgs"))
 
 
 (defclass ros_proj::custom_msg
   :super ros::object
-  :slots (_latitude _longitude _altitude _vehicleType ))
+  :slots (_custom_msg _latitude _longitude _altitude _vehicleType ))
 
 (defmethod ros_proj::custom_msg
   (:init
    (&key
+    ((:custom_msg __custom_msg) (instance std_msgs::Header :init))
     ((:latitude __latitude) 0.0)
     ((:longitude __longitude) 0.0)
     ((:altitude __altitude) 0.0)
     ((:vehicleType __vehicleType) "")
     )
    (send-super :init)
+   (setq _custom_msg __custom_msg)
    (setq _latitude (float __latitude))
    (setq _longitude (float __longitude))
    (setq _altitude (float __altitude))
    (setq _vehicleType (string __vehicleType))
    self)
+  (:custom_msg
+   (&rest __custom_msg)
+   (if (keywordp (car __custom_msg))
+       (send* _custom_msg __custom_msg)
+     (progn
+       (if __custom_msg (setq _custom_msg (car __custom_msg)))
+       _custom_msg)))
   (:latitude
    (&optional __latitude)
    (if __latitude (setq _latitude __latitude)) _latitude)
@@ -45,6 +56,8 @@
   (:serialization-length
    ()
    (+
+    ;; std_msgs/Header _custom_msg
+    (send _custom_msg :serialization-length)
     ;; float32 _latitude
     4
     ;; float32 _longitude
@@ -58,6 +71,8 @@
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
+     ;; std_msgs/Header _custom_msg
+       (send _custom_msg :serialize s)
      ;; float32 _latitude
        (sys::poke _latitude (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
      ;; float32 _longitude
@@ -70,6 +85,8 @@
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
+   ;; std_msgs/Header _custom_msg
+     (send _custom_msg :deserialize buf ptr-) (incf ptr- (send _custom_msg :serialization-length))
    ;; float32 _latitude
      (setq _latitude (sys::peek buf ptr- :float)) (incf ptr- 4)
    ;; float32 _longitude
@@ -82,17 +99,34 @@
    self)
   )
 
-(setf (get ros_proj::custom_msg :md5sum-) "b7b02c3dfba0b2b08c53eb019d9e8b34")
+(setf (get ros_proj::custom_msg :md5sum-) "3539ef97bcaedc9ae34172e0c5780202")
 (setf (get ros_proj::custom_msg :datatype-) "ros_proj/custom_msg")
 (setf (get ros_proj::custom_msg :definition-)
-      "float32 latitude
+      "Header custom_msg
+float32 latitude
 float32 longitude
 float32 altitude
 string vehicleType
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data
+# in a particular coordinate frame.
+#
+# sequence ID: consecutively increasing ID
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+
 ")
 
 
 
-(provide :ros_proj/custom_msg "b7b02c3dfba0b2b08c53eb019d9e8b34")
+(provide :ros_proj/custom_msg "3539ef97bcaedc9ae34172e0c5780202")
 
 

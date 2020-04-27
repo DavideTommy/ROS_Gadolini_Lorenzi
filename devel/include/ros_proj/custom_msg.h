@@ -15,6 +15,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <std_msgs/Header.h>
 
 namespace ros_proj
 {
@@ -24,13 +25,15 @@ struct custom_msg_
   typedef custom_msg_<ContainerAllocator> Type;
 
   custom_msg_()
-    : latitude(0.0)
+    : custom_msg()
+    , latitude(0.0)
     , longitude(0.0)
     , altitude(0.0)
     , vehicleType()  {
     }
   custom_msg_(const ContainerAllocator& _alloc)
-    : latitude(0.0)
+    : custom_msg(_alloc)
+    , latitude(0.0)
     , longitude(0.0)
     , altitude(0.0)
     , vehicleType(_alloc)  {
@@ -38,6 +41,9 @@ struct custom_msg_
     }
 
 
+
+   typedef  ::std_msgs::Header_<ContainerAllocator>  _custom_msg_type;
+  _custom_msg_type custom_msg;
 
    typedef float _latitude_type;
   _latitude_type latitude;
@@ -80,7 +86,8 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::ros_proj::custom_msg_<ContainerAllocator1> & lhs, const ::ros_proj::custom_msg_<ContainerAllocator2> & rhs)
 {
-  return lhs.latitude == rhs.latitude &&
+  return lhs.custom_msg == rhs.custom_msg &&
+    lhs.latitude == rhs.latitude &&
     lhs.longitude == rhs.longitude &&
     lhs.altitude == rhs.altitude &&
     lhs.vehicleType == rhs.vehicleType;
@@ -140,12 +147,12 @@ struct MD5Sum< ::ros_proj::custom_msg_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "b7b02c3dfba0b2b08c53eb019d9e8b34";
+    return "3539ef97bcaedc9ae34172e0c5780202";
   }
 
   static const char* value(const ::ros_proj::custom_msg_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xb7b02c3dfba0b2b0ULL;
-  static const uint64_t static_value2 = 0x8c53eb019d9e8b34ULL;
+  static const uint64_t static_value1 = 0x3539ef97bcaedc9aULL;
+  static const uint64_t static_value2 = 0xe34172e0c5780202ULL;
 };
 
 template<class ContainerAllocator>
@@ -164,10 +171,26 @@ struct Definition< ::ros_proj::custom_msg_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 latitude\n"
+    return "Header custom_msg\n"
+"float32 latitude\n"
 "float32 longitude\n"
 "float32 altitude\n"
 "string vehicleType\n"
+"================================================================================\n"
+"MSG: std_msgs/Header\n"
+"# Standard metadata for higher-level stamped data types.\n"
+"# This is generally used to communicate timestamped data \n"
+"# in a particular coordinate frame.\n"
+"# \n"
+"# sequence ID: consecutively increasing ID \n"
+"uint32 seq\n"
+"#Two-integer timestamp that is expressed as:\n"
+"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
+"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
+"# time-handling sugar is provided by the client library\n"
+"time stamp\n"
+"#Frame this data is associated with\n"
+"string frame_id\n"
 ;
   }
 
@@ -186,6 +209,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.custom_msg);
       stream.next(m.latitude);
       stream.next(m.longitude);
       stream.next(m.altitude);
@@ -208,6 +232,9 @@ struct Printer< ::ros_proj::custom_msg_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::ros_proj::custom_msg_<ContainerAllocator>& v)
   {
+    s << indent << "custom_msg: ";
+    s << std::endl;
+    Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.custom_msg);
     s << indent << "latitude: ";
     Printer<float>::stream(s, indent + "  ", v.latitude);
     s << indent << "longitude: ";
