@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_proj_generate_messages_lisp"
-  "/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp"
+  "/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

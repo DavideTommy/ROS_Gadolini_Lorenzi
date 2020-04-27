@@ -53,17 +53,16 @@ CMAKE_BINARY_DIR = /home/lorenzo/robotics/build
 # Include the progress variables for this target.
 include ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/progress.make
 
-ros_proj/CMakeFiles/ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp
+ros_proj/CMakeFiles/ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp
 
 
-/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
-/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp: /home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg
-/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from ros_proj/custom_msg.msg"
-	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg
+/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp: /home/lorenzo/robotics/src/ros_proj/msg/customMsg.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from ros_proj/customMsg.msg"
+	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/lorenzo/robotics/src/ros_proj/msg/customMsg.msg -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg
 
 ros_proj_generate_messages_lisp: ros_proj/CMakeFiles/ros_proj_generate_messages_lisp
-ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp
+ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp
 ros_proj_generate_messages_lisp: ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build.make
 
 .PHONY : ros_proj_generate_messages_lisp

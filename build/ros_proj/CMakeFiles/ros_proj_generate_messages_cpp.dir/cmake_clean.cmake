@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_proj_generate_messages_cpp"
-  "/home/lorenzo/robotics/devel/include/ros_proj/custom_msg.h"
+  "/home/lorenzo/robotics/devel/include/ros_proj/customMsg.h"
 )
 
 # Per-language clean rules from dependency scanning.

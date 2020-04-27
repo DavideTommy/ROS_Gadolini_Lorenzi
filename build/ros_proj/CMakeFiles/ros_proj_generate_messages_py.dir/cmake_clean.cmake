@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_proj_generate_messages_py"
-  "/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_custom_msg.py"
+  "/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py"
   "/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py"
 )
 

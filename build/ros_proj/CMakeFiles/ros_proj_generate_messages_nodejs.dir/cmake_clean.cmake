@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_proj_generate_messages_nodejs"
-  "/home/lorenzo/robotics/devel/share/gennodejs/ros/ros_proj/msg/custom_msg.js"
+  "/home/lorenzo/robotics/devel/share/gennodejs/ros/ros_proj/msg/customMsg.js"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/lorenzo/robotics/src/ros_proj/msg/custom_msg.msg"
+messages_str = "/home/lorenzo/robotics/src/ros_proj/msg/customMsg.msg"
 services_str = ""
 pkg_name = "ros_proj"
 dependencies_str = "std_msgs"

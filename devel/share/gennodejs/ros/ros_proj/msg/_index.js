@@ -1,8 +1,8 @@
 
 "use strict";
 
-let custom_msg = require('./custom_msg.js');
+let customMsg = require('./customMsg.js');
 
 module.exports = {
-  custom_msg: custom_msg,
+  customMsg: customMsg,
 };
