@@ -178,7 +178,7 @@ gtest/googlemock/gtest/clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/c
 # Target rules for target CMakeFiles/ros_proj.dir
 
 # All Build rule for target.
-CMakeFiles/ros_proj.dir/all:
+CMakeFiles/ros_proj.dir/all: CMakeFiles/ros_proj_generate_messages_cpp.dir/all
 	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/depend
 	$(MAKE) -f CMakeFiles/ros_proj.dir/build.make CMakeFiles/ros_proj.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles --progress-num=12,13,14 "Built target ros_proj"
@@ -186,7 +186,7 @@ CMakeFiles/ros_proj.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ros_proj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ros_proj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ros_proj.dir/rule

@@ -134,6 +134,24 @@ ros_proj_EXTERNAL_OBJECTS =
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libroscpp.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librosconsole.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librostime.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libcpp_common.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj: ros_proj/CMakeFiles/ros_proj.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/lorenzo/robotics/devel/lib/ros_proj/ros_proj"
 	cd /home/lorenzo/robotics/build/ros_proj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ros_proj.dir/link.txt --verbose=$(VERBOSE)

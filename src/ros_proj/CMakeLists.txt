@@ -107,7 +107,12 @@ add_message_files(
 catkin_package(
  # INCLUDE_DIRS include
  # LIBRARIES ros_proj
-  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
+  CATKIN_DEPENDS
+        roscpp
+        rospy
+        std_msgs
+        message_runtime
+        nav_msgs
  # DEPENDS system_lib
 )
 
@@ -135,7 +140,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/ros_proj_node.cpp)
+add_executable(ros_proj src/odometry.cpp src/rosMaster.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,11 +151,12 @@ include_directories(
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+ add_dependencies(ros_proj ros_proj_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+ target_link_libraries(ros_proj
+   ${catkin_LIBRARIES}
+ )
 
 #############
 ## Install ##
@@ -206,5 +212,5 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(ros_proj src/odometry.cpp src/rosMaster.cpp)
+
 target_link_libraries(ros_proj ${catkin_LIBRARIES})

@@ -469,7 +469,7 @@ ros_proj/preinstall:
 # Target rules for target ros_proj/CMakeFiles/ros_proj.dir
 
 # All Build rule for target.
-ros_proj/CMakeFiles/ros_proj.dir/all:
+ros_proj/CMakeFiles/ros_proj.dir/all: ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/all
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/depend
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=12,13,14 "Built target ros_proj"
@@ -482,7 +482,7 @@ all: ros_proj/CMakeFiles/ros_proj.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj.dir/rule

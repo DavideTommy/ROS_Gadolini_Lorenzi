@@ -112,6 +112,24 @@ devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libroscpp.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librosconsole.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libxmlrpcpp.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libroscpp_serialization.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/librostime.so
+devel/lib/ros_proj/ros_proj: /opt/ros/melodic/lib/libcpp_common.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_system.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libpthread.so
+devel/lib/ros_proj/ros_proj: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 devel/lib/ros_proj/ros_proj: CMakeFiles/ros_proj.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable devel/lib/ros_proj/ros_proj"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ros_proj.dir/link.txt --verbose=$(VERBOSE)
