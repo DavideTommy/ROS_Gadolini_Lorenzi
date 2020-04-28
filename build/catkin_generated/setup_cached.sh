@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD="/home/lorenzo/robotics/build"
-export ROS_PACKAGE_PATH="/home/lorenzo/robotics/src:/home/lorenzo/robotics/src/ros_proj:/opt/ros/melodic/share"

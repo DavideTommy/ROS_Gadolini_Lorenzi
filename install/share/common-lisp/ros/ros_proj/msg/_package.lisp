@@ -3,7 +3,5 @@
   (:export
    "<CUSTOMMSG>"
    "CUSTOMMSG"
-   "<CUSTOM_MSG>"
-   "CUSTOM_MSG"
   ))
 

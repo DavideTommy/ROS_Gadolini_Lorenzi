@@ -7,14 +7,14 @@ import struct
 
 
 class customMsg(genpy.Message):
-  _md5sum = "d622bc11a41e3b0036750a62b226b234"
+  _md5sum = "bec7a41a11f3982d277a0af26541e251"
   _type = "ros_proj/customMsg"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """float32 latitude
-float32 longitude
-float32 altitude
+  _full_text = """float32 E
+float32 N
+float32 Up
 string topic"""
-  __slots__ = ['latitude','longitude','altitude','topic']
+  __slots__ = ['E','N','Up','topic']
   _slot_types = ['float32','float32','float32','string']
 
   def __init__(self, *args, **kwds):
@@ -25,7 +25,7 @@ string topic"""
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       latitude,longitude,altitude,topic
+       E,N,Up,topic
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -34,18 +34,18 @@ string topic"""
     if args or kwds:
       super(customMsg, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.latitude is None:
-        self.latitude = 0.
-      if self.longitude is None:
-        self.longitude = 0.
-      if self.altitude is None:
-        self.altitude = 0.
+      if self.E is None:
+        self.E = 0.
+      if self.N is None:
+        self.N = 0.
+      if self.Up is None:
+        self.Up = 0.
       if self.topic is None:
         self.topic = ''
     else:
-      self.latitude = 0.
-      self.longitude = 0.
-      self.altitude = 0.
+      self.E = 0.
+      self.N = 0.
+      self.Up = 0.
       self.topic = ''
 
   def _get_types(self):
@@ -61,7 +61,7 @@ string topic"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3f().pack(_x.latitude, _x.longitude, _x.altitude))
+      buff.write(_get_struct_3f().pack(_x.E, _x.N, _x.Up))
       _x = self.topic
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -81,7 +81,7 @@ string topic"""
       _x = self
       start = end
       end += 12
-      (_x.latitude, _x.longitude, _x.altitude,) = _get_struct_3f().unpack(str[start:end])
+      (_x.E, _x.N, _x.Up,) = _get_struct_3f().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])
@@ -104,7 +104,7 @@ string topic"""
     """
     try:
       _x = self
-      buff.write(_get_struct_3f().pack(_x.latitude, _x.longitude, _x.altitude))
+      buff.write(_get_struct_3f().pack(_x.E, _x.N, _x.Up))
       _x = self.topic
       length = len(_x)
       if python3 or type(_x) == unicode:
@@ -125,7 +125,7 @@ string topic"""
       _x = self
       start = end
       end += 12
-      (_x.latitude, _x.longitude, _x.altitude,) = _get_struct_3f().unpack(str[start:end])
+      (_x.E, _x.N, _x.Up,) = _get_struct_3f().unpack(str[start:end])
       start = end
       end += 4
       (length,) = _struct_I.unpack(str[start:end])

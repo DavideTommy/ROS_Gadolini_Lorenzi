@@ -13,12 +13,16 @@
 #include "nav_msgs/Odometry.h"
 #include "ros_proj/customMsg.h"
 
+
 #define BUFFER_SIZE 50
+
+string test;
+
 struct encoded {
 
-    float North;
-    float East;
-    float Up;
+    float No;
+    float Ea;
+    float U;
 
 };
 
@@ -34,29 +38,8 @@ float longitude_init;
 float h0;
 
 static struct encoded *lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);
+void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg);
 
-void carManager(const sensor_msgs::NavSatFix::ConstPtr &msg);
-
-void obsManager(const sensor_msgs::NavSatFix::ConstPtr &msg);
-
-void fillPoPosition();
-
-class Odometer {
-
-public:
-
-
-
-
-
-    /**
- * Costruttore Classe odometro
- */
-
-    Odometer() {
-
-    };
-};
 
 class custom_msg;
 
@@ -88,16 +71,16 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     float lamb = deg_to_rad * (latitude);
     float phi = deg_to_rad * (longitude);
     float s = sin(lamb);
-    float N = a / sqrt(1 - e_sq * s * s);
+    float North = a / sqrt(1 - e_sq * s * s);
 
     float sin_lambda = sin(lamb);
     float cos_lambda = cos(lamb);
     float sin_phi = sin(phi);
     float cos_phi = cos(phi);
 
-    float x = (h + N) * cos_lambda * cos_phi;
-    float y = (h + N) * cos_lambda * sin_phi;
-    float z = float(h + (1 - e_sq) * N) * sin_lambda;
+    float x = (h + North) * cos_lambda * cos_phi;
+    float y = (h + North) * cos_lambda * sin_phi;
+    float z = float(h + (1 - e_sq) * North) * sin_lambda;
 
     //ROS_INFO("ECEF position: [%f,%f, %f]", x, y,z);
 
@@ -107,16 +90,16 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     lamb = deg_to_rad * (latitude_init);
     phi = deg_to_rad * (longitude_init);
     s = sin(lamb);
-    N = a / sqrt(1 - e_sq * s * s);
+    North = a / sqrt(1 - e_sq * s * s);
 
     sin_lambda = sin(lamb);
     cos_lambda = cos(lamb);
     sin_phi = sin(phi);
     cos_phi = cos(phi);
 
-    float x0 = (h0 + N) * cos_lambda * cos_phi;
-    float y0 = (h0 + N) * cos_lambda * sin_phi;
-    float z0 = float(h0 + (1 - e_sq) * N) * sin_lambda;
+    float x0 = (h0 + North) * cos_lambda * cos_phi;
+    float y0 = (h0 + North) * cos_lambda * sin_phi;
+    float z0 = float(h0 + (1 - e_sq) * North) * sin_lambda;
 
     float xd = x - x0;
     float yd = y - y0;
@@ -125,11 +108,11 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     struct encoded *temp = new struct encoded;
 
 
-    temp->East = -sin_phi * xd + cos_phi * yd;
-    temp->North = -cos_phi * sin_lambda * xd - sin_lambda * sin_phi * yd + cos_lambda * zd;
-    temp->Up = cos_lambda * cos_phi * xd + cos_lambda * sin_phi * yd + sin_lambda * zd;
+    temp->Ea = -sin_phi * xd + cos_phi * yd;
+    temp->No = -cos_phi * sin_lambda * xd - sin_lambda * sin_phi * yd + cos_lambda * zd;
+    temp->U = cos_lambda * cos_phi * xd + cos_lambda * sin_phi * yd + sin_lambda * zd;
 
-    //ROS_INFO("ENU position: [%f,%f, %f]", xEast, yNorth,zUp);
+    ROS_INFO("ENU position: [%f,%f, %f]", temp->Ea, temp->No,temp->U);
 
     return temp;
 }
@@ -137,10 +120,14 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
 void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
     vehicle = lla2enu(msg);
-    vehicleEncodedMessage.E= vehicle->East;
+    vehicleEncodedMessage.E = vehicle->Ea;
+    vehicleEncodedMessage.N = vehicle->No;
+    vehicleEncodedMessage.Up = vehicle->U;
 
-    printf("LEggo i dati di custom msg: %f , %f , %f ", vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
-    //printf("Vehicle coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", vehicle->East, vehicle->North, vehicle->Up);
+    //strcpy(vehicleEncodedMessage.topic, test);
+
+    ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
+
 
 }
 
@@ -153,16 +140,18 @@ int main(int argc, char **argv) {
 
     ROS_INFO("argc: %d  argv: %s %s", argc, argv[0], argv[1] );
 
-    ros::init(argc, argv, "odometry");
-    Odometer odometer;
+    ros::init(argc, argv, "ros_proj");
 
-    latitude_init = atof(argv[0]);
-    longitude_init = atof(argv[1]);
-    h0 = atof(argv[2]);
+
+
+    latitude_init = atof(argv[1]);
+    longitude_init = atof(argv[2]);
+    h0 = atof(argv[3]);
+
 
     ros::NodeHandle nh;
-    ros::Subscriber bagTopic = nh.subscribe(argv[3], BUFFER_SIZE, topicManager);
-    //ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>("name", BUFFER_SIZE);
+    ros::Subscriber bagTopic = nh.subscribe(argv[4] , BUFFER_SIZE, topicManager);
+    ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>("name", BUFFER_SIZE);
     ros::spin();
 
     return 0;
