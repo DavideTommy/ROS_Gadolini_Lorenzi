@@ -80,7 +80,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter" />
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="Publisher working">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -448,7 +451,7 @@
       <workItem from="1587828713869" duration="5592000" />
       <workItem from="1587834583721" duration="363000" />
       <workItem from="1587891537070" duration="4544000" />
-      <workItem from="1588027268328" duration="7621000" />
+      <workItem from="1588027268328" duration="8310000" />
     </task>
     <task id="LOCAL-00001" summary="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
       <created>1587862820056</created>
@@ -506,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588067395739</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Publisher working">
+      <created>1588067683379</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588067683379</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +540,8 @@
     <MESSAGE value="created customMsg.msg and configurated CMakeLists.txt and package.xml" />
     <MESSAGE value="message correctly built and viewed by rosmsg show ros_proj/customMsg" />
     <MESSAGE value="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter" />
+    <MESSAGE value="Publisher working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Publisher working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="695" y="322" width="587" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588030186727">
@@ -589,15 +600,15 @@
       <screen x="67" y="27" width="1853" height="958" />
     </state>
     <state width="1807" height="410" key="GridCell.Tab.1.right/67.27.1853.958@67.27.1853.958" timestamp="1587905069602" />
-    <state x="124" y="98" width="1384" height="747" key="SettingsEditor" timestamp="1588029635265">
+    <state x="531" y="87" width="1384" height="747" key="SettingsEditor" timestamp="1588068185360">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
     <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
-    <state x="124" y="98" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1588029635265" />
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588067399737">
+    <state x="531" y="87" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1588068185360" />
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588067687298">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1588067399737" />
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1588067687298" />
     <state x="764" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588006251979">
       <screen x="67" y="27" width="1853" height="958" />
     </state>
