@@ -7,9 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PYTHONPATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/lorenzo/robotics/src/ros_proj:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel:/opt/ros/melodic"
+export LD_LIBRARY_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib:/opt/ros/melodic/lib"
+export PKG_CONFIG_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/pkgconfig:/opt/ros/melodic/lib/pkgconfig"
+export PYTHONPATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/python2.7/dist-packages:/opt/ros/melodic/lib/python2.7/dist-packages"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/lorenzo/robotics/src/ros_proj:/opt/ros/melodic/share"

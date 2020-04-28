@@ -110,10 +110,10 @@ string vehicleType
 ================================================================================
 MSG: std_msgs/Header
 # Standard metadata for higher-level stamped data types.
-# This is generally used to communicate timestamped data
+# This is generally used to communicate timestamped data 
 # in a particular coordinate frame.
-#
-# sequence ID: consecutively increasing ID
+# 
+# sequence ID: consecutively increasing ID 
 uint32 seq
 #Two-integer timestamp that is expressed as:
 # * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
