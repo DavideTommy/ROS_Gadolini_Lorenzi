@@ -1,6 +1,7 @@
 /opt/clion-2020.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX:PATH= ~/robotics/devel -G "CodeBlocks - Unix Makefiles" /home/lorenzo/robotics/src/ros_proj
 -- Using CATKIN_DEVEL_PREFIX: /home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel
--- Using CMAKE_PREFIX_PATH: 
+-- Using CMAKE_PREFIX_PATH: /home/lorenzo/robotics/devel;/opt/ros/melodic
+-- This workspace overlays: /home/lorenzo/robotics/devel;/opt/ros/melodic
 -- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
 -- Using PYTHON_EXECUTABLE: /usr/bin/python2
 -- Using Debian Python package layout
@@ -14,20 +15,8 @@
 -- Using Python nosetests: /usr/bin/nosetests-2.7
 -- catkin 0.7.23
 -- BUILD_SHARED_LIBS is on
-Traceback (most recent call last):
-  File "/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py", line 20, in <module>
-    from catkin.environment_cache import generate_environment_script
-ImportError: No module named catkin.environment_cache
-CMake Error at /opt/ros/melodic/share/catkin/cmake/safe_execute_process.cmake:11 (message):
-  execute_process(/usr/bin/python2
-  "/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py")
-  returned error code 1
-Call Stack (most recent call first):
-  /opt/ros/melodic/share/catkin/cmake/all.cmake:208 (safe_execute_process)
-  /opt/ros/melodic/share/catkin/cmake/catkinConfig.cmake:20 (include)
-  CMakeLists.txt:10 (find_package)
-
-
--- Configuring incomplete, errors occurred!
-See also "/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/CMakeFiles/CMakeError.log".
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- ros_proj: 1 messages, 0 services
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lorenzo/robotics/src/ros_proj/cmake-build-debug

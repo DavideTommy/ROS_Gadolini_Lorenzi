@@ -11,5 +11,5 @@ export CMAKE_PREFIX_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/
 export LD_LIBRARY_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PYTHONPATH="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/share/common-lisp"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/lorenzo/robotics/src/ros_proj/cmake-build-debug/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/lorenzo/robotics/src/ros_proj:$ROS_PACKAGE_PATH"

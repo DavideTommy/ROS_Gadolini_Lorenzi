@@ -16,7 +16,7 @@
 
 #define BUFFER_SIZE 50
 
-string test;
+
 
 struct encoded {
 
