@@ -140,10 +140,6 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
     vehicleEncodedMessage.E= vehicle->East;
 
     printf("LEggo i dati di custom msg: %f , %f , %f ", vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
-
-
-
-
     //printf("Vehicle coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", vehicle->East, vehicle->North, vehicle->Up);
 
 }

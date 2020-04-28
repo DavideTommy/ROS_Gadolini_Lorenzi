@@ -132,5 +132,3 @@ ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o: /opt/ros/melodic/include/tf
 ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 
-ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o: /home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp
-

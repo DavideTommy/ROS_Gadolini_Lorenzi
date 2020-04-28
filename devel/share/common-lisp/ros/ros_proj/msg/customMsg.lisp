@@ -7,19 +7,19 @@
 ;//! \htmlinclude customMsg.msg.html
 
 (cl:defclass <customMsg> (roslisp-msg-protocol:ros-message)
-  ((latitude
-    :reader latitude
-    :initarg :latitude
+  ((E
+    :reader E
+    :initarg :E
     :type cl:float
     :initform 0.0)
-   (longitude
-    :reader longitude
-    :initarg :longitude
+   (N
+    :reader N
+    :initarg :N
     :type cl:float
     :initform 0.0)
-   (altitude
-    :reader altitude
-    :initarg :altitude
+   (Up
+    :reader Up
+    :initarg :Up
     :type cl:float
     :initform 0.0)
    (topic
@@ -37,20 +37,20 @@
   (cl:unless (cl:typep m 'customMsg)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name ros_proj-msg:<customMsg> is deprecated: use ros_proj-msg:customMsg instead.")))
 
-(cl:ensure-generic-function 'latitude-val :lambda-list '(m))
-(cl:defmethod latitude-val ((m <customMsg>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_proj-msg:latitude-val is deprecated.  Use ros_proj-msg:latitude instead.")
-  (latitude m))
+(cl:ensure-generic-function 'E-val :lambda-list '(m))
+(cl:defmethod E-val ((m <customMsg>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_proj-msg:E-val is deprecated.  Use ros_proj-msg:E instead.")
+  (E m))
 
-(cl:ensure-generic-function 'longitude-val :lambda-list '(m))
-(cl:defmethod longitude-val ((m <customMsg>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_proj-msg:longitude-val is deprecated.  Use ros_proj-msg:longitude instead.")
-  (longitude m))
+(cl:ensure-generic-function 'N-val :lambda-list '(m))
+(cl:defmethod N-val ((m <customMsg>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_proj-msg:N-val is deprecated.  Use ros_proj-msg:N instead.")
+  (N m))
 
-(cl:ensure-generic-function 'altitude-val :lambda-list '(m))
-(cl:defmethod altitude-val ((m <customMsg>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_proj-msg:altitude-val is deprecated.  Use ros_proj-msg:altitude instead.")
-  (altitude m))
+(cl:ensure-generic-function 'Up-val :lambda-list '(m))
+(cl:defmethod Up-val ((m <customMsg>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader ros_proj-msg:Up-val is deprecated.  Use ros_proj-msg:Up instead.")
+  (Up m))
 
 (cl:ensure-generic-function 'topic-val :lambda-list '(m))
 (cl:defmethod topic-val ((m <customMsg>))
@@ -58,17 +58,17 @@
   (topic m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <customMsg>) ostream)
   "Serializes a message object of type '<customMsg>"
-  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'latitude))))
+  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'E))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
-  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'longitude))))
+  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'N))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
-  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'altitude))))
+  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'Up))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
@@ -87,19 +87,19 @@
       (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
-    (cl:setf (cl:slot-value msg 'latitude) (roslisp-utils:decode-single-float-bits bits)))
+    (cl:setf (cl:slot-value msg 'E) (roslisp-utils:decode-single-float-bits bits)))
     (cl:let ((bits 0))
       (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
-    (cl:setf (cl:slot-value msg 'longitude) (roslisp-utils:decode-single-float-bits bits)))
+    (cl:setf (cl:slot-value msg 'N) (roslisp-utils:decode-single-float-bits bits)))
     (cl:let ((bits 0))
       (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
-    (cl:setf (cl:slot-value msg 'altitude) (roslisp-utils:decode-single-float-bits bits)))
+    (cl:setf (cl:slot-value msg 'Up) (roslisp-utils:decode-single-float-bits bits)))
     (cl:let ((__ros_str_len 0))
       (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
@@ -118,16 +118,16 @@
   "ros_proj/customMsg")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<customMsg>)))
   "Returns md5sum for a message object of type '<customMsg>"
-  "d622bc11a41e3b0036750a62b226b234")
+  "bec7a41a11f3982d277a0af26541e251")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'customMsg)))
   "Returns md5sum for a message object of type 'customMsg"
-  "d622bc11a41e3b0036750a62b226b234")
+  "bec7a41a11f3982d277a0af26541e251")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<customMsg>)))
   "Returns full string definition for message of type '<customMsg>"
-  (cl:format cl:nil "float32 latitude~%float32 longitude~%float32 altitude~%string topic~%~%"))
+  (cl:format cl:nil "float32 E~%float32 N~%float32 Up~%string topic~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'customMsg)))
   "Returns full string definition for message of type 'customMsg"
-  (cl:format cl:nil "float32 latitude~%float32 longitude~%float32 altitude~%string topic~%~%"))
+  (cl:format cl:nil "float32 E~%float32 N~%float32 Up~%string topic~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <customMsg>))
   (cl:+ 0
      4
@@ -138,8 +138,8 @@
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <customMsg>))
   "Converts a ROS message object to a list"
   (cl:list 'customMsg
-    (cl:cons ':latitude (latitude msg))
-    (cl:cons ':longitude (longitude msg))
-    (cl:cons ':altitude (altitude msg))
+    (cl:cons ':E (E msg))
+    (cl:cons ':N (N msg))
+    (cl:cons ':Up (Up msg))
     (cl:cons ':topic (topic msg))
 ))

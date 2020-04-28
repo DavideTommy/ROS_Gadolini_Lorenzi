@@ -26,8 +26,8 @@
       <config projectName="ros_proj" targetName="ros_proj_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="ros_proj" />
       <config projectName="ros_proj" targetName="ros_proj_generate_messages" />
+      <config projectName="ros_proj" targetName="ros_proj" />
       <config projectName="ros_proj" targetName="ros_proj_geneus" />
       <config projectName="ros_proj" targetName="ros_proj_genlisp" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_nodejs" />
@@ -55,11 +55,11 @@
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_eus" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_py" />
       <config projectName="ros_proj" targetName="actionlib_msgs_generate_messages_lisp" />
-      <config projectName="ros_proj" targetName="ros_proj_gennodejs" />
       <config projectName="ros_proj" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="ros_proj" targetName="ros_proj_gennodejs" />
       <config projectName="ros_proj" targetName="ros_proj_generate_messages_nodejs" />
-      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="ros_proj_generate_messages_eus" />
+      <config projectName="ros_proj" targetName="nav_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="gmock" />
       <config projectName="ros_proj" targetName="ros_proj_gencpp" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_eus" />
@@ -70,8 +70,8 @@
       <config projectName="ros_proj" targetName="geometry_msgs_generate_messages_cpp" />
       <config projectName="ros_proj" targetName="std_msgs_generate_messages_nodejs" />
       <config projectName="ros_proj" targetName="nav_msgs_generate_messages_py" />
-      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
       <config projectName="ros_proj" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="ros_proj" targetName="roscpp_generate_messages_py" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -80,15 +80,38 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="Publisher working">
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/atomic_configure/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/generate_cached_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/_setup_util.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="ENU custom message">
+      <change afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ros_proj/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/include/ros_proj/customMsg.h" beforeDir="false" afterPath="$PROJECT_DIR$/devel/include/ros_proj/customMsg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" beforeDir="false" afterPath="$PROJECT_DIR$/devel/lib/ros_proj/ros_proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package.lisp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package_customMsg.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package_customMsg.lisp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/_index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/customMsg.js" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/customMsg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devel/share/roseus/ros/ros_proj/msg/customMsg.l" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/roseus/ros/ros_proj/msg/customMsg.l" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/launch/odometry.launch" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/launch/odometry.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
     </list>
@@ -531,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588068307440</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ENU custom message">
+      <created>1588080891663</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588080891663</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +586,8 @@
     <MESSAGE value="message correctly built and viewed by rosmsg show ros_proj/customMsg" />
     <MESSAGE value="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter" />
     <MESSAGE value="Publisher working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Publisher working" />
+    <MESSAGE value="ENU custom message" />
+    <option name="LAST_COMMIT_MESSAGE" value="ENU custom message" />
   </component>
   <component name="WindowStateProjectService">
     <state x="695" y="322" width="587" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588030186727">
@@ -621,9 +652,10 @@
     </state>
     <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
     <state x="531" y="87" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1588068185360" />
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588068313612">
-      <screen x="67" y="27" width="1853" height="988" />
+    <state x="588" y="249" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588080894172">
+      <screen x="67" y="27" width="1853" height="958" />
     </state>
+    <state x="588" y="249" key="Vcs.Push.Dialog.v2/67.27.1853.958@67.27.1853.958" timestamp="1588080894172" />
     <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1588068313612" />
     <state x="764" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588006251979">
       <screen x="67" y="27" width="1853" height="958" />

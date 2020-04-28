@@ -18,29 +18,29 @@ class customMsg {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.latitude = null;
-      this.longitude = null;
-      this.altitude = null;
+      this.E = null;
+      this.N = null;
+      this.Up = null;
       this.topic = null;
     }
     else {
-      if (initObj.hasOwnProperty('latitude')) {
-        this.latitude = initObj.latitude
+      if (initObj.hasOwnProperty('E')) {
+        this.E = initObj.E
       }
       else {
-        this.latitude = 0.0;
+        this.E = 0.0;
       }
-      if (initObj.hasOwnProperty('longitude')) {
-        this.longitude = initObj.longitude
-      }
-      else {
-        this.longitude = 0.0;
-      }
-      if (initObj.hasOwnProperty('altitude')) {
-        this.altitude = initObj.altitude
+      if (initObj.hasOwnProperty('N')) {
+        this.N = initObj.N
       }
       else {
-        this.altitude = 0.0;
+        this.N = 0.0;
+      }
+      if (initObj.hasOwnProperty('Up')) {
+        this.Up = initObj.Up
+      }
+      else {
+        this.Up = 0.0;
       }
       if (initObj.hasOwnProperty('topic')) {
         this.topic = initObj.topic
@@ -53,12 +53,12 @@ class customMsg {
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type customMsg
-    // Serialize message field [latitude]
-    bufferOffset = _serializer.float32(obj.latitude, buffer, bufferOffset);
-    // Serialize message field [longitude]
-    bufferOffset = _serializer.float32(obj.longitude, buffer, bufferOffset);
-    // Serialize message field [altitude]
-    bufferOffset = _serializer.float32(obj.altitude, buffer, bufferOffset);
+    // Serialize message field [E]
+    bufferOffset = _serializer.float32(obj.E, buffer, bufferOffset);
+    // Serialize message field [N]
+    bufferOffset = _serializer.float32(obj.N, buffer, bufferOffset);
+    // Serialize message field [Up]
+    bufferOffset = _serializer.float32(obj.Up, buffer, bufferOffset);
     // Serialize message field [topic]
     bufferOffset = _serializer.string(obj.topic, buffer, bufferOffset);
     return bufferOffset;
@@ -68,12 +68,12 @@ class customMsg {
     //deserializes a message object of type customMsg
     let len;
     let data = new customMsg(null);
-    // Deserialize message field [latitude]
-    data.latitude = _deserializer.float32(buffer, bufferOffset);
-    // Deserialize message field [longitude]
-    data.longitude = _deserializer.float32(buffer, bufferOffset);
-    // Deserialize message field [altitude]
-    data.altitude = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [E]
+    data.E = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [N]
+    data.N = _deserializer.float32(buffer, bufferOffset);
+    // Deserialize message field [Up]
+    data.Up = _deserializer.float32(buffer, bufferOffset);
     // Deserialize message field [topic]
     data.topic = _deserializer.string(buffer, bufferOffset);
     return data;
@@ -92,15 +92,15 @@ class customMsg {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'd622bc11a41e3b0036750a62b226b234';
+    return 'bec7a41a11f3982d277a0af26541e251';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    float32 latitude
-    float32 longitude
-    float32 altitude
+    float32 E
+    float32 N
+    float32 Up
     string topic
     `;
   }
@@ -111,25 +111,25 @@ class customMsg {
       msg = {};
     }
     const resolved = new customMsg(null);
-    if (msg.latitude !== undefined) {
-      resolved.latitude = msg.latitude;
+    if (msg.E !== undefined) {
+      resolved.E = msg.E;
     }
     else {
-      resolved.latitude = 0.0
+      resolved.E = 0.0
     }
 
-    if (msg.longitude !== undefined) {
-      resolved.longitude = msg.longitude;
+    if (msg.N !== undefined) {
+      resolved.N = msg.N;
     }
     else {
-      resolved.longitude = 0.0
+      resolved.N = 0.0
     }
 
-    if (msg.altitude !== undefined) {
-      resolved.altitude = msg.altitude;
+    if (msg.Up !== undefined) {
+      resolved.Up = msg.Up;
     }
     else {
-      resolved.altitude = 0.0
+      resolved.Up = 0.0
     }
 
     if (msg.topic !== undefined) {

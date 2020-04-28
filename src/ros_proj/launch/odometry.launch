@@ -1,6 +1,6 @@
 <launch>
-    <node pkg="ros_proj" type="odometry" name = "car" args="45.621750 9.281561 224.118473 /swiftnav/front/gps_pose"/>
-    <node pkg="ros_proj" type="odometry" name = "obs" args="45.621750 9.281561 224.118473 /swiftnav/obs/gps_pose"/>
+    <node pkg="ros_proj" type="ros_proj" name = "car" args="45.621750 9.281561 224.118473 /swiftnav/front/gps_pose"/>
+    <node pkg="ros_proj" type="ros_proj" name = "obs" args="45.621750 9.281561 224.118473 /swiftnav/obs/gps_pose"/>
 
 
     <!-- Coordinate gps partenza:   Lat: 45.621750     Long: 9.281561    Alt:224.118473 -->

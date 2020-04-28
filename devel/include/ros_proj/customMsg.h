@@ -24,29 +24,29 @@ struct customMsg_
   typedef customMsg_<ContainerAllocator> Type;
 
   customMsg_()
-    : latitude(0.0)
-    , longitude(0.0)
-    , altitude(0.0)
+    : E(0.0)
+    , N(0.0)
+    , Up(0.0)
     , topic()  {
     }
   customMsg_(const ContainerAllocator& _alloc)
-    : latitude(0.0)
-    , longitude(0.0)
-    , altitude(0.0)
+    : E(0.0)
+    , N(0.0)
+    , Up(0.0)
     , topic(_alloc)  {
   (void)_alloc;
     }
 
 
 
-   typedef float _latitude_type;
-  _latitude_type latitude;
+   typedef float _E_type;
+  _E_type E;
 
-   typedef float _longitude_type;
-  _longitude_type longitude;
+   typedef float _N_type;
+  _N_type N;
 
-   typedef float _altitude_type;
-  _altitude_type altitude;
+   typedef float _Up_type;
+  _Up_type Up;
 
    typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _topic_type;
   _topic_type topic;
@@ -80,9 +80,9 @@ return s;
 template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::ros_proj::customMsg_<ContainerAllocator1> & lhs, const ::ros_proj::customMsg_<ContainerAllocator2> & rhs)
 {
-  return lhs.latitude == rhs.latitude &&
-    lhs.longitude == rhs.longitude &&
-    lhs.altitude == rhs.altitude &&
+  return lhs.E == rhs.E &&
+    lhs.N == rhs.N &&
+    lhs.Up == rhs.Up &&
     lhs.topic == rhs.topic;
 }
 
@@ -140,12 +140,12 @@ struct MD5Sum< ::ros_proj::customMsg_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "d622bc11a41e3b0036750a62b226b234";
+    return "bec7a41a11f3982d277a0af26541e251";
   }
 
   static const char* value(const ::ros_proj::customMsg_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xd622bc11a41e3b00ULL;
-  static const uint64_t static_value2 = 0x36750a62b226b234ULL;
+  static const uint64_t static_value1 = 0xbec7a41a11f3982dULL;
+  static const uint64_t static_value2 = 0x277a0af26541e251ULL;
 };
 
 template<class ContainerAllocator>
@@ -164,9 +164,9 @@ struct Definition< ::ros_proj::customMsg_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "float32 latitude\n"
-"float32 longitude\n"
-"float32 altitude\n"
+    return "float32 E\n"
+"float32 N\n"
+"float32 Up\n"
 "string topic\n"
 ;
   }
@@ -186,9 +186,9 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.latitude);
-      stream.next(m.longitude);
-      stream.next(m.altitude);
+      stream.next(m.E);
+      stream.next(m.N);
+      stream.next(m.Up);
       stream.next(m.topic);
     }
 
@@ -208,12 +208,12 @@ struct Printer< ::ros_proj::customMsg_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::ros_proj::customMsg_<ContainerAllocator>& v)
   {
-    s << indent << "latitude: ";
-    Printer<float>::stream(s, indent + "  ", v.latitude);
-    s << indent << "longitude: ";
-    Printer<float>::stream(s, indent + "  ", v.longitude);
-    s << indent << "altitude: ";
-    Printer<float>::stream(s, indent + "  ", v.altitude);
+    s << indent << "E: ";
+    Printer<float>::stream(s, indent + "  ", v.E);
+    s << indent << "N: ";
+    Printer<float>::stream(s, indent + "  ", v.N);
+    s << indent << "Up: ";
+    Printer<float>::stream(s, indent + "  ", v.Up);
     s << indent << "topic: ";
     Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.topic);
   }
