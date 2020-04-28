@@ -80,47 +80,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter">
-      <change afterPath="$PROJECT_DIR$/install/include/ros_proj/customMsg.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/_package_customMsg.lisp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/customMsg.lisp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install/share/gennodejs/ros/ros_proj/msg/customMsg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install/share/ros_proj/msg/customMsg.msg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/install/share/roseus/ros/ros_proj/msg/customMsg.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/atomic_configure/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/generate_cached_setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/installspace/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/order_packages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/catkin_generated/stamps/Project/_setup_util.py.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/install_manifest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/install_manifest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/CMakeFiles/ros_proj.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/installspace/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/package.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ros_proj/catkin_generated/stamps/ros_proj/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/build/ros_proj/catkin_generated/stamps/ros_proj/package.xml.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/devel/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/_package.lisp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/gennodejs/ros/ros_proj/msg/_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/devel/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/lib/pkgconfig/ros_proj.pc" beforeDir="false" afterPath="$PROJECT_DIR$/install/lib/pkgconfig/ros_proj.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/lib/python2.7/dist-packages/ros_proj/msg/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/install/lib/python2.7/dist-packages/ros_proj/msg/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/_package.lisp" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/_package.lisp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/gennodejs/ros/ros_proj/msg/_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/gennodejs/ros/ros_proj/msg/_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/ros_proj/cmake/ros_proj-msg-extras.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/ros_proj/cmake/ros_proj-msg-extras.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/ros_proj/cmake/ros_projConfig.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/ros_proj/cmake/ros_projConfig.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/share/ros_proj/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/install/share/ros_proj/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/package.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/package.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/setup_cached.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/package.xml.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/catkin_generated/stamps/ros_proj/package.xml.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/cmake-build-debug/devel/_setup_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/package.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ros_proj/src/odometry.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="709a082b-2aa4-49dd-92df-e77075d127c9" name="Default Changelist" comment="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -488,7 +448,7 @@
       <workItem from="1587828713869" duration="5592000" />
       <workItem from="1587834583721" duration="363000" />
       <workItem from="1587891537070" duration="4544000" />
-      <workItem from="1588027268328" duration="7250000" />
+      <workItem from="1588027268328" duration="7621000" />
     </task>
     <task id="LOCAL-00001" summary="_Added nav_msgs dependency to CMakeLists.txt&#10;_Added working enu conversion&#10;_still no OBJ oriented">
       <created>1587862820056</created>
@@ -539,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588031891965</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dovrebbe essere apposto tutto, da ridefinire il publisher, aggiunte dipendencies per il message filter">
+      <created>1588067395739</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588067395739</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,10 +594,10 @@
     </state>
     <state x="124" y="96" width="1384" height="747" key="SettingsEditor/67.27.1853.958@67.27.1853.958" timestamp="1587648489629" />
     <state x="124" y="98" key="SettingsEditor/67.27.1853.988@67.27.1853.988" timestamp="1588029635265" />
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588031898081">
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588067399737">
       <screen x="67" y="27" width="1853" height="988" />
     </state>
-    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1588031898081" />
+    <state x="588" y="256" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.988@67.27.1853.988" timestamp="1588067399737" />
     <state x="764" y="423" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588006251979">
       <screen x="67" y="27" width="1853" height="958" />
     </state>

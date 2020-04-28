@@ -158,7 +158,7 @@ int main(int argc, char **argv) {
 
     ros::NodeHandle nh;
     ros::Subscriber bagTopic = nh.subscribe(argv[3], BUFFER_SIZE, topicManager);
-    ros::Publisher encodedTopic = nh.advertise<ros_proj::custom_msg>("name", BUFFER_SIZE)  //TODO: impostare selezione di topic dinamico e creare custom message
+    ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>("name", BUFFER_SIZE);  //TODO: impostare selezione di topic dinamico e creare custom message
 
     ros::spin();
 
