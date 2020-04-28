@@ -839,6 +839,33 @@ src/odometry.cpp.s:
 	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/odometry.cpp.s
 .PHONY : src/odometry.cpp.s
 
+src/rosMaster.o: src/rosMaster.cpp.o
+
+.PHONY : src/rosMaster.o
+
+# target to build an object file
+src/rosMaster.cpp.o:
+	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.o
+.PHONY : src/rosMaster.cpp.o
+
+src/rosMaster.i: src/rosMaster.cpp.i
+
+.PHONY : src/rosMaster.i
+
+# target to preprocess a source file
+src/rosMaster.cpp.i:
+	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.i
+.PHONY : src/rosMaster.cpp.i
+
+src/rosMaster.s: src/rosMaster.cpp.s
+
+.PHONY : src/rosMaster.s
+
+# target to generate assembly for a file
+src/rosMaster.cpp.s:
+	cd /home/lorenzo/robotics/build && $(MAKE) -f ros_proj/CMakeFiles/ros_proj.dir/build.make ros_proj/CMakeFiles/ros_proj.dir/src/rosMaster.cpp.s
+.PHONY : src/rosMaster.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -898,6 +925,9 @@ help:
 	@echo "... src/odometry.o"
 	@echo "... src/odometry.i"
 	@echo "... src/odometry.s"
+	@echo "... src/rosMaster.o"
+	@echo "... src/rosMaster.i"
+	@echo "... src/rosMaster.s"
 .PHONY : help
 
 

@@ -14,7 +14,6 @@
 /home/lorenzo/robotics/install/share/roseus/ros/ros_proj/msg/customMsg.l
 /home/lorenzo/robotics/install/share/common-lisp/ros/ros_proj/msg/ros_proj-msg.asd
 /home/lorenzo/robotics/install/share/common-lisp/ros/ros_proj/msg/_package.lisp
-/home/lorenzo/robotics/install/share/common-lisp/ros/ros_proj/msg/custom_msg.lisp
 /home/lorenzo/robotics/install/share/common-lisp/ros/ros_proj/msg/_package_customMsg.lisp
 /home/lorenzo/robotics/install/share/common-lisp/ros/ros_proj/msg/customMsg.lisp
 /home/lorenzo/robotics/install/share/gennodejs/ros/ros_proj/msg/customMsg.js
