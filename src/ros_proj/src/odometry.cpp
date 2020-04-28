@@ -23,6 +23,10 @@ struct encoded {
 };
 
 static struct encoded *vehicle;
+/**
+ * variabile di tipo custom message
+ */
+ros_proj::customMsg vehicleEncodedMessage;
 
 //fixed position of the car
 float latitude_init;
@@ -133,6 +137,13 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
 void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
     vehicle = lla2enu(msg);
+    vehicleEncodedMessage.E= vehicle->East;
+
+    printf("LEggo i dati di custom msg: %f , %f , %f ", vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
+
+
+
+
     //printf("Vehicle coordinates: Latitude: %f - Longitude %f - Altitude:%f \n", vehicle->East, vehicle->North, vehicle->Up);
 
 }
@@ -144,18 +155,18 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
 
 int main(int argc, char **argv) {
 
-    ros::init(argc, argv, "my_node");
+    ROS_INFO("argc: %d  argv: %s %s", argc, argv[0], argv[1] );
+
+    ros::init(argc, argv, "odometry");
     Odometer odometer;
 
     latitude_init = atof(argv[0]);
     longitude_init = atof(argv[1]);
     h0 = atof(argv[2]);
 
-
     ros::NodeHandle nh;
     ros::Subscriber bagTopic = nh.subscribe(argv[3], BUFFER_SIZE, topicManager);
-    ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>("name", BUFFER_SIZE);  //TODO: impostare selezione di topic dinamico e creare custom message
-
+    //ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>("name", BUFFER_SIZE);
     ros::spin();
 
     return 0;

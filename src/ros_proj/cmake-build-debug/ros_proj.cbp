@@ -837,9 +837,6 @@
 		<Unit filename="/home/lorenzo/robotics/src/ros_proj/src/odometry.cpp">
 			<Option target="ros_proj"/>
 		</Unit>
-		<Unit filename="/home/lorenzo/robotics/src/ros_proj/src/rosMaster.cpp">
-			<Option target="ros_proj"/>
-		</Unit>
 		<Unit filename="/usr/src/googletest/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
