@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /home/lorenzo/robotics/build
 include ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/progress.make
 
 ros_proj/CMakeFiles/ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py
+ros_proj/CMakeFiles/ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/_distanceCalculator.py
 ros_proj/CMakeFiles/ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py
+ros_proj/CMakeFiles/ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/__init__.py
 
 
 /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
@@ -62,14 +64,28 @@ ros_proj/CMakeFiles/ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG ros_proj/customMsg"
 	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lorenzo/robotics/src/ros_proj/msg/customMsg.msg -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg
 
+/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/_distanceCalculator.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/_distanceCalculator.py: /home/lorenzo/robotics/src/ros_proj/srv/distanceCalculator.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV ros_proj/distanceCalculator"
+	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/lorenzo/robotics/src/ros_proj/srv/distanceCalculator.srv -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv
+
 /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for ros_proj"
+/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/_distanceCalculator.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for ros_proj"
 	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg --initpy
+
+/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/__init__.py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py
+/home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/__init__.py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/_distanceCalculator.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for ros_proj"
+	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv --initpy
 
 ros_proj_generate_messages_py: ros_proj/CMakeFiles/ros_proj_generate_messages_py
 ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/_customMsg.py
+ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/_distanceCalculator.py
 ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/msg/__init__.py
+ros_proj_generate_messages_py: /home/lorenzo/robotics/devel/lib/python2.7/dist-packages/ros_proj/srv/__init__.py
 ros_proj_generate_messages_py: ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/build.make
 
 .PHONY : ros_proj_generate_messages_py

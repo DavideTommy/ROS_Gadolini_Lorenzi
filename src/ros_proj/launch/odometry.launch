@@ -1,9 +1,6 @@
 <launch>
     <node pkg="ros_proj" type="ros_proj" name = "car" args="45.621750 9.281561 224.118473 /swiftnav/front/gps_pose carriola" output="screen"/>
     <node pkg="ros_proj" type="ros_proj" name = "obs" args="45.621750 9.281561 224.118473 /swiftnav/obs/gps_pose fiurinoammmmetano" output="screen"/>
-
-
-
     <!-- Coordinate gps partenza:   Lat: 45.621750     Long: 9.281561    Alt:224.118473 -->
     <!-- Topic da assegnare a seconda di chi si sottoscrive a cosa: se è Front (macchina) allora il topic è /swiftnav/front/gps_pose, se è ostacolo /swiftnav/obs/gps_pose-->
     <!-- args="45.621750 9.281561 224.118473 /swiftnav/front/gps_pose"   "45.621750 9.281561 224.118473 /swiftnav/obs/gps_pose" -->
