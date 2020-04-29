@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/lorenzo/robotics/build
 include ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/progress.make
 
 ros_proj/CMakeFiles/ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp
+ros_proj/CMakeFiles/ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/srv/distanceCalculator.lisp
 
 
 /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
@@ -61,8 +62,14 @@ ros_proj/CMakeFiles/ros_proj_generate_messages_lisp: /home/lorenzo/robotics/deve
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from ros_proj/customMsg.msg"
 	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/lorenzo/robotics/src/ros_proj/msg/customMsg.msg -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg
 
+/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/srv/distanceCalculator.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/srv/distanceCalculator.lisp: /home/lorenzo/robotics/src/ros_proj/srv/distanceCalculator.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from ros_proj/distanceCalculator.srv"
+	cd /home/lorenzo/robotics/build/ros_proj && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/lorenzo/robotics/src/ros_proj/srv/distanceCalculator.srv -Iros_proj:/home/lorenzo/robotics/src/ros_proj/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p ros_proj -o /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/srv
+
 ros_proj_generate_messages_lisp: ros_proj/CMakeFiles/ros_proj_generate_messages_lisp
 ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/msg/customMsg.lisp
+ros_proj_generate_messages_lisp: /home/lorenzo/robotics/devel/share/common-lisp/ros/ros_proj/srv/distanceCalculator.lisp
 ros_proj_generate_messages_lisp: ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build.make
 
 .PHONY : ros_proj_generate_messages_lisp

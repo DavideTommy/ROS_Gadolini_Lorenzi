@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/lorenzo/robotics/src/ros_proj/msg/customMsg.msg"
-services_str = ""
+services_str = "/home/lorenzo/robotics/src/ros_proj/srv/distanceCalculator.srv"
 pkg_name = "ros_proj"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

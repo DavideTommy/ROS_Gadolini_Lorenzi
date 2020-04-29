@@ -419,6 +419,8 @@ ros_proj/clean: ros_proj/CMakeFiles/ros_proj_genpy.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/ros_proj_gennodejs.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/clean
+ros_proj/clean: ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
+ros_proj/clean: ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
@@ -438,6 +440,7 @@ ros_proj/clean: ros_proj/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clea
 ros_proj/clean: ros_proj/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+ros_proj/clean: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/roscpp_generate_messages_py.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/roscpp_generate_messages_eus.dir/clean
@@ -451,8 +454,6 @@ ros_proj/clean: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_custo
 ros_proj/clean: ros_proj/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
-ros_proj/clean: ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
-ros_proj/clean: ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/ros_proj_gencpp.dir/clean
 ros_proj/clean: ros_proj/CMakeFiles/ros_proj_generate_messages.dir/clean
@@ -516,7 +517,7 @@ all: ros_proj/CMakeFiles/ros_proj.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj.dir/rule
@@ -548,7 +549,7 @@ ros_proj/CMakeFiles/ros_proj_genpy.dir/all: ros_proj/CMakeFiles/ros_proj_generat
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_genpy.dir/rule
@@ -573,15 +574,16 @@ clean: ros_proj/CMakeFiles/ros_proj_genpy.dir/clean
 
 # All Build rule for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/all: ros_proj/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
 ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_customMsg.dir/all
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/depend
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=20,21 "Built target ros_proj_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=24,25,26,27 "Built target ros_proj_generate_messages_py"
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_py.dir/rule
@@ -613,7 +615,7 @@ ros_proj/CMakeFiles/ros_proj_gennodejs.dir/all: ros_proj/CMakeFiles/ros_proj_gen
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_gennodejs.dir/rule
@@ -638,15 +640,16 @@ clean: ros_proj/CMakeFiles/ros_proj_gennodejs.dir/clean
 
 # All Build rule for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/all: ros_proj/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
 ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_customMsg.dir/all
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/depend
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=19 "Built target ros_proj_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=22,23 "Built target ros_proj_generate_messages_nodejs"
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/rule
@@ -663,6 +666,70 @@ ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: ros_proj/CMakeFiles/ros_proj_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_proj/CMakeFiles/ros_proj_genlisp.dir
+
+# All Build rule for target.
+ros_proj/CMakeFiles/ros_proj_genlisp.dir/all: ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_genlisp.dir/build.make ros_proj/CMakeFiles/ros_proj_genlisp.dir/depend
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_genlisp.dir/build.make ros_proj/CMakeFiles/ros_proj_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num= "Built target ros_proj_genlisp"
+.PHONY : ros_proj/CMakeFiles/ros_proj_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+ros_proj/CMakeFiles/ros_proj_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
+.PHONY : ros_proj/CMakeFiles/ros_proj_genlisp.dir/rule
+
+# Convenience name for target.
+ros_proj_genlisp: ros_proj/CMakeFiles/ros_proj_genlisp.dir/rule
+
+.PHONY : ros_proj_genlisp
+
+# clean rule for target.
+ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean:
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_genlisp.dir/build.make ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
+.PHONY : ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
+
+# clean rule for target.
+clean: ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_proj/CMakeFiles/ros_proj_geneus.dir
+
+# All Build rule for target.
+ros_proj/CMakeFiles/ros_proj_geneus.dir/all: ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_geneus.dir/build.make ros_proj/CMakeFiles/ros_proj_geneus.dir/depend
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_geneus.dir/build.make ros_proj/CMakeFiles/ros_proj_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num= "Built target ros_proj_geneus"
+.PHONY : ros_proj/CMakeFiles/ros_proj_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+ros_proj/CMakeFiles/ros_proj_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
+.PHONY : ros_proj/CMakeFiles/ros_proj_geneus.dir/rule
+
+# Convenience name for target.
+ros_proj_geneus: ros_proj/CMakeFiles/ros_proj_geneus.dir/rule
+
+.PHONY : ros_proj_geneus
+
+# clean rule for target.
+ros_proj/CMakeFiles/ros_proj_geneus.dir/clean:
+	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_geneus.dir/build.make ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
+.PHONY : ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
+
+# clean rule for target.
+clean: ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
 
 .PHONY : clean
 
@@ -1275,6 +1342,38 @@ clean: ros_proj/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir
+
+# All Build rule for target.
+ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all:
+	$(MAKE) -f ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/build.make ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/depend
+	$(MAKE) -f ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/build.make ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num= "Built target _ros_proj_generate_messages_check_deps_distanceCalculator"
+.PHONY : ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
+
+# Build rule for subdir invocation for target.
+ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
+.PHONY : ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/rule
+
+# Convenience name for target.
+_ros_proj_generate_messages_check_deps_distanceCalculator: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/rule
+
+.PHONY : _ros_proj_generate_messages_check_deps_distanceCalculator
+
+# clean rule for target.
+ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/clean:
+	$(MAKE) -f ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/build.make ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/clean
+.PHONY : ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/clean
+
+# clean rule for target.
+clean: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target ros_proj/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
@@ -1439,15 +1538,16 @@ clean: ros_proj/CMakeFiles/nav_msgs_generate_messages_eus.dir/clean
 
 # All Build rule for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all: ros_proj/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
 ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_customMsg.dir/all
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/depend
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=18 "Built target ros_proj_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=20,21 "Built target ros_proj_generate_messages_lisp"
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/rule
@@ -1692,83 +1792,20 @@ clean: ros_proj/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target ros_proj/CMakeFiles/ros_proj_genlisp.dir
-
-# All Build rule for target.
-ros_proj/CMakeFiles/ros_proj_genlisp.dir/all: ros_proj/CMakeFiles/ros_proj_generate_messages_lisp.dir/all
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_genlisp.dir/build.make ros_proj/CMakeFiles/ros_proj_genlisp.dir/depend
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_genlisp.dir/build.make ros_proj/CMakeFiles/ros_proj_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num= "Built target ros_proj_genlisp"
-.PHONY : ros_proj/CMakeFiles/ros_proj_genlisp.dir/all
-
-# Build rule for subdir invocation for target.
-ros_proj/CMakeFiles/ros_proj_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
-.PHONY : ros_proj/CMakeFiles/ros_proj_genlisp.dir/rule
-
-# Convenience name for target.
-ros_proj_genlisp: ros_proj/CMakeFiles/ros_proj_genlisp.dir/rule
-
-.PHONY : ros_proj_genlisp
-
-# clean rule for target.
-ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean:
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_genlisp.dir/build.make ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
-.PHONY : ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
-
-# clean rule for target.
-clean: ros_proj/CMakeFiles/ros_proj_genlisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target ros_proj/CMakeFiles/ros_proj_geneus.dir
-
-# All Build rule for target.
-ros_proj/CMakeFiles/ros_proj_geneus.dir/all: ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_geneus.dir/build.make ros_proj/CMakeFiles/ros_proj_geneus.dir/depend
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_geneus.dir/build.make ros_proj/CMakeFiles/ros_proj_geneus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num= "Built target ros_proj_geneus"
-.PHONY : ros_proj/CMakeFiles/ros_proj_geneus.dir/all
-
-# Build rule for subdir invocation for target.
-ros_proj/CMakeFiles/ros_proj_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_geneus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
-.PHONY : ros_proj/CMakeFiles/ros_proj_geneus.dir/rule
-
-# Convenience name for target.
-ros_proj_geneus: ros_proj/CMakeFiles/ros_proj_geneus.dir/rule
-
-.PHONY : ros_proj_geneus
-
-# clean rule for target.
-ros_proj/CMakeFiles/ros_proj_geneus.dir/clean:
-	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_geneus.dir/build.make ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
-.PHONY : ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
-
-# clean rule for target.
-clean: ros_proj/CMakeFiles/ros_proj_geneus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir
 
 # All Build rule for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/all: ros_proj/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
 ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_customMsg.dir/all
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/depend
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=15 "Built target ros_proj_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=15,16 "Built target ros_proj_generate_messages_cpp"
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_cpp.dir/rule
@@ -1800,7 +1837,7 @@ ros_proj/CMakeFiles/ros_proj_gencpp.dir/all: ros_proj/CMakeFiles/ros_proj_genera
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_gencpp.dir/rule
@@ -1841,7 +1878,7 @@ all: ros_proj/CMakeFiles/ros_proj_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages.dir/rule
@@ -1866,15 +1903,16 @@ clean: ros_proj/CMakeFiles/ros_proj_generate_messages.dir/clean
 
 # All Build rule for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all: ros_proj/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_distanceCalculator.dir/all
 ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all: ros_proj/CMakeFiles/_ros_proj_generate_messages_check_deps_customMsg.dir/all
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/depend
 	$(MAKE) -f ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/build.make ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=16,17 "Built target ros_proj_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lorenzo/robotics/build/CMakeFiles --progress-num=17,18,19 "Built target ros_proj_generate_messages_eus"
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lorenzo/robotics/build/CMakeFiles 0
 .PHONY : ros_proj/CMakeFiles/ros_proj_generate_messages_eus.dir/rule
