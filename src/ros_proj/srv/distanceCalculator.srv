@@ -1,0 +1,14 @@
+#Car
+float32 ec
+float32 nc
+float32 uc
+
+#Obstacle
+float32 eo
+float32 no
+float32 uo
+
+---
+
+#Response
+float32 dist

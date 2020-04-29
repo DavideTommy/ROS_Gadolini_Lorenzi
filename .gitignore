@@ -1,0 +1,8 @@
+#ignore compiled directories
+/build
+/devel
+/install
+#ignore files from workspace
+.catkin_workspace
+.floo
+.flooignore
