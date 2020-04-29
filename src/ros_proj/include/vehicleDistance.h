@@ -7,8 +7,8 @@
 
 
 
-class distanceCalculator{
-   // distanceCalculator();
+class vehicleDistance{
+    public: vehicleDistance();
 
     bool distancer(ros_proj::vehicleDistance::Request &inputRequest, ros_proj::vehicleDistance::Response &outputResponse);
 

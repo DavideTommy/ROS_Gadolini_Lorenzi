@@ -13,7 +13,8 @@
 #include "nav_msgs/Odometry.h"
 #include "ros_proj/customMsg.h"
 #include "ros_proj/distanceCalculator.h"
-#include "ros_proj/include/master.h"
+#include "master.h"
+#include "vehicleDistance.h"
 
 
 #define BUFFER_SIZE 50
@@ -154,14 +155,13 @@ int main(int argc, char **argv) {
     ros::Subscriber bagTopic = nh.subscribe(argv[4] , BUFFER_SIZE, topicManager);
     ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
 
+    /**
+     * The main node is instanced twice, so i need to run the service once and choose
+     * one of the two instances
+     */
     if(strcmp(argv[5], "car")) {
-
-        ros_proj::
-
-
-
-
-
+        master scheduler;
+        vehicleDistance calculator;
     }
 
 
