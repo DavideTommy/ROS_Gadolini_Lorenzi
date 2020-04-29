@@ -156,6 +156,7 @@ int main(int argc, char **argv) {
     ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
 
     /**
+     * @attention harcoded "car" may break the code
      * The main node is instanced twice, so i need to run the service once and choose
      * one of the two instances
      */
@@ -165,10 +166,12 @@ int main(int argc, char **argv) {
     }
 
 
-
-
     ros::spin();
 
     return 0;
 
 }
+
+/*TODO cercare qualsiasi valore hardcoddato che scasserebbe il codice se cambiato nel launcher
+       come ad esempio in master cpp carSub e obsSub @attention
+*/

@@ -32,7 +32,7 @@ public:
      * Used to keep calls to service alive until all data have been processed
      */
     void keepAlive();
-    void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customMsg::ConstPtr &msg2);
+    static void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customMsg::ConstPtr &msg2);
 };
 
 
