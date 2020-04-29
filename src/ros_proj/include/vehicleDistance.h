@@ -6,7 +6,10 @@
 #include <cmath>
 
 
-
+/**
+ * Declaration of the method used to compute the distance
+ * between the car and the obstacle
+ */
 class vehicleDistance{
     public:
 

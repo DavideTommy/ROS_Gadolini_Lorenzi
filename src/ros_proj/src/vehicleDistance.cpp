@@ -3,8 +3,8 @@
 /**
  * Euclidean distance for each axis
  * @param inputRequest is the request coming from the manager
- * @param outputResponse is the response coming from the manager
- * @return is our distance
+ * @param outputResponse is the response containing the computed distance
+ * @return true if the computation worked
  */
 bool vehicleDistance::distancer(ros_proj::vehicleDistance::Request &inputRequest, ros_proj::vehicleDistance::Response &outputResponse) {
 
