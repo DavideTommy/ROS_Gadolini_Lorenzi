@@ -145,6 +145,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_ros_proj_generate_messages_check_deps_distanceCalculator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="_ros_proj_generate_messages_check_deps_distanceCalculator" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="actionlib_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ros_proj" TARGET_NAME="actionlib_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -402,6 +407,7 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application._ros_proj_generate_messages_check_deps_customMsg" />
+      <item itemvalue="CMake Application._ros_proj_generate_messages_check_deps_distanceCalculator" />
       <item itemvalue="CMake Application.actionlib_msgs_generate_messages_cpp" />
       <item itemvalue="CMake Application.actionlib_msgs_generate_messages_eus" />
       <item itemvalue="CMake Application.actionlib_msgs_generate_messages_lisp" />
