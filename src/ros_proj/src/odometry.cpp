@@ -44,14 +44,13 @@ static struct encoded *lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);
 void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg);
 
 
-class custom_msg;
 
 /**
-    * Prende le coordinate dei punti e fa la manhattan distance
-    *
-    * dovrà prendere in ingresso le coordinate della macchina e dell'ostacolo e fare i conti
-    * @return distance
-    */
+ * Conversion method
+ * Used to convert project.bag data from lla to ENU standard
+ * @param msg is the message coming from topic
+ * @return a struct containing required data
+ */
 
 
 struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
@@ -120,6 +119,10 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     return temp;
 }
 
+/**
+ * This function is used to manage the conversion from lla2enu from topics
+ * @param msg
+ */
 void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
     vehicle = lla2enu(msg);
@@ -127,7 +130,6 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
     vehicleEncodedMessage.N = vehicle->No;
     vehicleEncodedMessage.Up = vehicle->U;
 
-    //strcpy(vehicleEncodedMessage.topic, test);
 
     ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
 
@@ -160,7 +162,7 @@ int main(int argc, char **argv) {
      * The main node is instanced twice, so i need to run the service once and choose
      * one of the two instances
      */
-    if(strcmp(argv[5], "car")) {
+    if(strcmp(argv[5], "car") != 0) {
         master scheduler;
         vehicleDistance calculator;
     }

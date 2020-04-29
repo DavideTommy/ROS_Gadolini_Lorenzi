@@ -1,25 +1,5 @@
-Progetto Robotics, Pianificazione:
-
-1) Necessità di un file .cpp che istanzi due nodi che si occuperanno di iscriversi ai topics della bag, uno come gestore dei messaggi Macchina (Front) e uno come gestore dei messaggi Ostacolo (Obs);
-Questi due nodi dovranno :
-
-- Istanziarsi prendendo in input (da launcher) un parametro che serva a distinguere in quale modalità operare (front o obs);
-- Essere lanciato da launch file e ricevere il valore di riferimento degli assi per la conversione lla-enu;
-- Sottoscriversi al topic registrato nella bag e assegnato dal launcher;
-- Pubblicare su un NUOVO topic per ogni veicolo i dati letti dalla bag e gia convertiti;
-
-2) Necessità di un Service che effettui il calcolo della distanza.
-Il service dovrebbe essere in grado di iscriversi ai due topic che i nodi "Enocder" hanno creato e su cui stan pubblicando i dati encoddati.
-
-Per prima cosa il service viene avviato e riceve come parametro il nome/percorso sul quale i due encoder stan pubblicando dati enu
-Tramite message filter il service sarà in grado di distinguere i dati in ingresso, di effettuare il conto, e di restituire il valore.
-
-3) Necessità di un file .cpp che istanzi un nodo il cui compito è contattare "continuamente" il service, per ottenere ad ogni call la distanza a cui si trovano i due veicoli.
-
-4) Implementare un message filter che si occuperà della gestione di sincronia e indirizzamento dei topic.
-
-
-
-
-TODO: Eseguire la bag/tradurla in un altro formato file, ed estrapolare la prima coordinata trasmessa dalla macchina (front).
-      Questo è lo starting point da copiare nel launch file.
+Roba che manca
+_ finire callback con chiamata a service (da finire?)
+_ calcolo delle etichette (SAFE, UNSAFE,CRASH)
+_progettare pubblicazione messaggio di tipo odometry e TF
+_optional dynamic reconfigure

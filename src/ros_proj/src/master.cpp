@@ -10,7 +10,6 @@
 ros_proj::vehicleDistance server;
 
 /**
- *
  * KeepAlive implementation
  * @bug queue_size in message_filters has value 1, replace if needed
  * @bug queue size in sync(filterPolicy) has value 10, replace if needed
