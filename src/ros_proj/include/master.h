@@ -1,0 +1,5 @@
+
+#ifndef ROS_PROJ_MASTER_H
+#define ROS_PROJ_MASTER_H
+
+#endif //ROS_PROJ_MASTER_H

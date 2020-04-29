@@ -12,6 +12,8 @@
 #include <malloc.h>
 #include "nav_msgs/Odometry.h"
 #include "ros_proj/customMsg.h"
+#include "ros_proj/distanceCalculator.h"
+#include "ros_proj/include/master.h"
 
 
 #define BUFFER_SIZE 50
@@ -143,7 +145,6 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "ros_proj");
 
 
-
     latitude_init = atof(argv[1]);
     longitude_init = atof(argv[2]);
     h0 = atof(argv[3]);
@@ -152,6 +153,20 @@ int main(int argc, char **argv) {
     ros::NodeHandle nh;
     ros::Subscriber bagTopic = nh.subscribe(argv[4] , BUFFER_SIZE, topicManager);
     ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
+
+    if(strcmp(argv[5], "car")) {
+
+        ros_proj::
+
+
+
+
+
+    }
+
+
+
+
     ros::spin();
 
     return 0;
