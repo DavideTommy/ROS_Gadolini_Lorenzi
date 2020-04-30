@@ -34,6 +34,7 @@ static struct encoded *vehicle;
  * variabile di tipo custom message
  */
 ros_proj::customMsg vehicleEncodedMessage;
+ros::Publisher encodedTopic;
 
 //fixed position of the car
 float latitude_init;
@@ -55,7 +56,7 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
 
 struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
-    ROS_INFO("Input position: [%f,%f, %f]", msg->latitude, msg->longitude,msg->altitude);
+    //ROS_INFO("Input position: [%f,%f, %f]", msg->latitude, msg->longitude,msg->altitude);
     // fixed values
 
     double a = 6378137;
@@ -114,7 +115,7 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
     temp->No = -cos_phi * sin_lambda * xd - sin_lambda * sin_phi * yd + cos_lambda * zd;
     temp->U = cos_lambda * cos_phi * xd + cos_lambda * sin_phi * yd + sin_lambda * zd;
 
-    ROS_INFO("ENU position: [%f,%f, %f]", temp->Ea, temp->No,temp->U);
+    //ROS_INFO("ENU position: [%f,%f, %f]", temp->Ea, temp->No,temp->U);
 
     return temp;
 }
@@ -129,6 +130,8 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
     vehicleEncodedMessage.E = vehicle->Ea;
     vehicleEncodedMessage.N = vehicle->No;
     vehicleEncodedMessage.Up = vehicle->U;
+
+    encodedTopic.publish(vehicleEncodedMessage);
 
 
     ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
@@ -158,7 +161,8 @@ int main(int argc, char **argv) {
     ros::NodeHandle initNode;
 
     ros::Subscriber bagTopic = initNode.subscribe(argv[4] , BUFFER_SIZE, topicManager);
-    ros::Publisher encodedTopic = initNode.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
+    encodedTopic = initNode.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
+
 
     ros::spin();
 

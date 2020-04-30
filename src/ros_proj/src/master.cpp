@@ -84,10 +84,10 @@ void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customM
         message_filters::Subscriber<ros_proj::customMsg> obsSub(filterNode, "obsENU", 1);
         ROS_INFO("pre message filter");
         typedef message_filters::sync_policies::ApproximateTime<ros_proj::customMsg, ros_proj::customMsg> filterPolicy;
-        message_filters::Synchronizer<filterPolicy> sync(filterPolicy(10), carSub, obsSub);
+        message_filters::Synchronizer<filterPolicy> sync(filterPolicy(50), carSub, obsSub);
 
         ROS_INFO("pre sync.register callback");
-        sync.registerCallback(boost::bind(callBack, _1, _2));
+        sync.registerCallback(boost::bind(&callBack,_1,_2));
         ROS_INFO("post sync reg call");
 
         ros::spin();
