@@ -19,7 +19,7 @@ ros::ServiceClient distanceClient;
  * @return true if condition are satisfied
  */
 bool verifier(const ros_proj::customMsg::ConstPtr &msg) {
-    return msg != NULL || (msg->E != 0 && msg->N != 0 && msg->Up != 0);
+    return msg != NULL && (msg->E != 0 && msg->N != 0 && msg->Up != 0);
 }
 
 /**
@@ -33,7 +33,7 @@ void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customM
 
     ros_proj::vehicleDistance server;
 
-    ROS_INFO("Inside Callback");
+
 
     float msg1e = msg1->E;
     float msg1n = msg1->N;
@@ -61,8 +61,18 @@ void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customM
         server.request.uo = msg2u;
 
         if (distanceClient.call(server)) {
-            ROS_INFO("msg1e: %f \t msg2e: %f \t", msg1e, msg2e);
-            ROS_INFO("Distance: %f\n", server.response.dist);
+            float localResponse = server.response.dist;
+            //ROS_INFO("msg1e: %f \t msg2e: %f \t", msg1e, msg2e);
+            ROS_INFO("Distance: %f", localResponse);
+
+            if (localResponse > 5) {
+                ROS_INFO("SAFE");
+            }
+            else if (localResponse < 1) {
+                ROS_INFO("CRASH");
+            }
+            else ROS_INFO("UNSAFE");
+
         } else
             ROS_ERROR("call error, unable to contact server");
     }//else pubblica direttamente senza chiamare il service il valore NaN
@@ -73,20 +83,18 @@ void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customM
 
         ros::init(argc, argv, "my_name");
 
-        ROS_INFO("Keep Alive master");
+        //ROS_INFO("Keep Alive master");
 
         ros::NodeHandle filterNode;
         distanceClient = filterNode.serviceClient<ros_proj::vehicleDistance>("distanceCalculator");
 
         message_filters::Subscriber<ros_proj::customMsg> carSub(filterNode, "carENU", 1);
         message_filters::Subscriber<ros_proj::customMsg> obsSub(filterNode, "obsENU", 1);
-        ROS_INFO("pre message filter");
-        typedef message_filters::sync_policies::ApproximateTime<ros_proj::customMsg, ros_proj::customMsg> filterPolicy;
-        message_filters::Synchronizer<filterPolicy> sync(filterPolicy(50), carSub, obsSub);
 
-        ROS_INFO("pre sync.register callback");
+        typedef message_filters::sync_policies::ApproximateTime<ros_proj::customMsg, ros_proj::customMsg> filterPolicy;
+        message_filters::Synchronizer<filterPolicy> sync(filterPolicy(5), carSub, obsSub);
+
         sync.registerCallback(boost::bind(&callBack,_1,_2));
-        ROS_INFO("post sync reg call");
 
         ros::spin();
 

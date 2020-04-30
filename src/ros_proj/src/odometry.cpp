@@ -134,7 +134,7 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
     encodedTopic.publish(vehicleEncodedMessage);
 
 
-    ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
+    //ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
 
 
 }
