@@ -1,4 +1,6 @@
 #include "vehicleDistance.h"
+#include "ros/ros.h"
+#include "ros_proj/customMsg.h"
 
 /**
  * Euclidean distance for each axis
@@ -6,12 +8,18 @@
  * @param outputResponse is the response containing the computed distance
  * @return true if the computation worked
  */
-bool vehicleDistance::distancer(ros_proj::vehicleDistance::Request &inputRequest, ros_proj::vehicleDistance::Response &outputResponse) {
-
+bool distancer(ros_proj::vehicleDistance::Request &inputRequest, ros_proj::vehicleDistance::Response &outputResponse) {
+    ROS_INFO("pre calcolo");
     outputResponse.dist = sqrt(pow((inputRequest.ec-inputRequest.eo),2)+pow((inputRequest.nc-inputRequest.no),2)+pow((inputRequest.uc-inputRequest.uo),2));
     return true;
 
 }
 
 
+int main(int argc, char **argv) {
 
+    ros::init(argc, argv, "my_name");
+    ros::NodeHandle serverNode;
+    ros::ServiceServer calculator = serverNode.advertiseService("distanceCalculator", distancer);
+    ros::spin();
+}

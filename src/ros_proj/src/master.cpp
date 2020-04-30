@@ -8,7 +8,7 @@
 
 using namespace message_filters;
 
-ros_proj::vehicleDistance server;
+
 ros::ServiceClient distanceClient;
 
 
@@ -30,6 +30,8 @@ bool verifier(const ros_proj::customMsg::ConstPtr &msg) {
  * @param msg2 Message coming from obs
  */
 void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customMsg::ConstPtr &msg2) {
+
+    ros_proj::vehicleDistance server;
 
     ROS_INFO("Inside Callback");
 
@@ -59,14 +61,11 @@ void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customM
         server.request.uo = msg2u;
 
         if (distanceClient.call(server)) {
-            ROS_INFO("msg1e: %f \t msg2e: %f \t\n", msg1e, msg2e);
-
+            ROS_INFO("msg1e: %f \t msg2e: %f \t", msg1e, msg2e);
             ROS_INFO("Distance: %f\n", server.response.dist);
         } else
-            ROS_ERROR("non va una mazza");
-
-
-    }
+            ROS_ERROR("call error, unable to contact server");
+    }//else pubblica direttamente senza chiamare il service il valore NaN
 }
 //TODO spostare distance calc nel cmakelists da executable/ros_porj a filter/ros_proj
 
@@ -77,8 +76,7 @@ void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customM
         ROS_INFO("Keep Alive master");
 
         ros::NodeHandle filterNode;
-        ros::ServiceServer calculator = filterNode.advertiseService("distanceCalculator", vehicleDistance::distancer);
-        distanceClient = filterNode.serviceClient<ros_proj::vehicleDistance>("distanceClient");
+        distanceClient = filterNode.serviceClient<ros_proj::vehicleDistance>("distanceCalculator");
 
         message_filters::Subscriber<ros_proj::customMsg> carSub(filterNode, "carENU", 1);
         message_filters::Subscriber<ros_proj::customMsg> obsSub(filterNode, "obsENU", 1);
