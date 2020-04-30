@@ -13,7 +13,7 @@
 #include "nav_msgs/Odometry.h"
 #include "ros_proj/customMsg.h"
 #include "ros_proj/distanceCalculator.h"
-#include "master.h"
+
 #include "vehicleDistance.h"
 
 
@@ -148,25 +148,17 @@ int main(int argc, char **argv) {
     ros::init(argc, argv, "ros_proj");
 
 
+
     latitude_init = atof(argv[1]);
     longitude_init = atof(argv[2]);
     h0 = atof(argv[3]);
 
 
-    ros::NodeHandle nh;
-    ros::Subscriber bagTopic = nh.subscribe(argv[4] , BUFFER_SIZE, topicManager);
-    ros::Publisher encodedTopic = nh.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
 
-    /**
-     * @attention harcoded "car" may break the code
-     * The main node is instanced twice, so i need to run the service once and choose
-     * one of the two instances
-     */
-    if(strcmp(argv[5], "car") != 0) {
-        master scheduler;
-        vehicleDistance calculator;
-    }
+    ros::NodeHandle initNode;
 
+    ros::Subscriber bagTopic = initNode.subscribe(argv[4] , BUFFER_SIZE, topicManager);
+    ros::Publisher encodedTopic = initNode.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
 
     ros::spin();
 

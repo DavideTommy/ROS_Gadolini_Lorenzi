@@ -1,45 +1,17 @@
-#include "master.h"
 #include "ros/ros.h"
 #include "ros_proj/customMsg.h"
 #include <message_filters/sync_policies/approximate_time.h>
 #include <message_filters/subscriber.h>
 #include <message_filters/synchronizer.h>
+#include "vehicleDistance.h"
 
 
+using namespace message_filters;
 
 ros_proj::vehicleDistance server;
+ros::ServiceClient distanceClient;
 
-/**
- * KeepAlive implementation
- * @bug queue_size in message_filters has value 1, replace if needed
- * @bug queue size in sync(filterPolicy) has value 10, replace if needed
- * @attention topic field is hardcoded, check odometry.launch
- * This method is used to keep alive the node on which are done request to service
- * and listen to the topic
- */
-void master::keepAlive() {
-    ROS_INFO("Keep Alive master");
-    ros::NodeHandle nh;
-    ros::ServiceClient distanceClient = nh.serviceClient<ros_proj::vehicleDistance>("distanceClient");
-    message_filters::Subscriber<ros_proj::customMsg> carSub(nh,"car",1);
-    message_filters::Subscriber<ros_proj::customMsg> obsSub(nh,"obs",1);
 
-    typedef message_filters::sync_policies::ApproximateTime<ros_proj::customMsg, ros_proj::customMsg> filterPolicy;
-    message_filters::Synchronizer<filterPolicy> sync(filterPolicy(10), carSub, obsSub);
-
-    sync.registerCallback(boost::bind(master::callBack,_1,_2));
-
-    ros::spin();
-
-};
-
-/**
- * Manages the interaction between Car and Obs nodes and the vehicleDistance service
- */
-master::master() {
-    ROS_INFO("costruttore master");
-    keepAlive();
-}
 
 /**
  * Verifies message validity
@@ -57,7 +29,10 @@ bool verifier(const ros_proj::customMsg::ConstPtr &msg) {
  * @param msg1 Message coming from car
  * @param msg2 Message coming from obs
  */
-void master::callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customMsg::ConstPtr &msg2) {
+void callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj::customMsg::ConstPtr &msg2) {
+
+    ROS_INFO("Inside Callback");
+
     float msg1e = msg1->E;
     float msg1n = msg1->N;
     float msg1u = msg1->Up;
@@ -76,13 +51,47 @@ void master::callBack(const ros_proj::customMsg::ConstPtr &msg1, const ros_proj:
     validMsg2 = verifier(msg2);
 
     if (validMsg1 && validMsg2) {
-        //chiamare service
+        server.request.ec = msg1e;
+        server.request.nc = msg1n;
+        server.request.uc = msg1u;
+        server.request.eo = msg2e;
+        server.request.no = msg2n;
+        server.request.uo = msg2u;
+
+        if (distanceClient.call(server)) {
+            ROS_INFO("msg1e: %f \t msg2e: %f \t\n", msg1e, msg2e);
+
+            ROS_INFO("Distance: %f\n", server.response.dist);
+        } else
+            ROS_ERROR("non va una mazza");
+
+
     }
-
-
-
 }
+//TODO spostare distance calc nel cmakelists da executable/ros_porj a filter/ros_proj
 
+    int main(int argc, char **argv) {
 
+        ros::init(argc, argv, "my_name");
+
+        ROS_INFO("Keep Alive master");
+
+        ros::NodeHandle filterNode;
+        ros::ServiceServer calculator = filterNode.advertiseService("distanceCalculator", vehicleDistance::distancer);
+        distanceClient = filterNode.serviceClient<ros_proj::vehicleDistance>("distanceClient");
+
+        message_filters::Subscriber<ros_proj::customMsg> carSub(filterNode, "carENU", 1);
+        message_filters::Subscriber<ros_proj::customMsg> obsSub(filterNode, "obsENU", 1);
+        ROS_INFO("pre message filter");
+        typedef message_filters::sync_policies::ApproximateTime<ros_proj::customMsg, ros_proj::customMsg> filterPolicy;
+        message_filters::Synchronizer<filterPolicy> sync(filterPolicy(10), carSub, obsSub);
+
+        ROS_INFO("pre sync.register callback");
+        sync.registerCallback(boost::bind(callBack, _1, _2));
+        ROS_INFO("post sync reg call");
+
+        ros::spin();
+
+    };
 
 
