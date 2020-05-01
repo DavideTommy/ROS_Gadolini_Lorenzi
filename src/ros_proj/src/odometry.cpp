@@ -1,7 +1,6 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include <sstream>
-#include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
 #include <dynamic_reconfigure/server.h>
@@ -13,13 +12,15 @@
 #include "nav_msgs/Odometry.h"
 #include "ros_proj/customMsg.h"
 #include "ros_proj/distanceCalculator.h"
+#include <tf/transform_broadcaster.h>
+
 
 #include "vehicleDistance.h"
 
 
 #define BUFFER_SIZE 50
 
-
+using std::string;
 
 struct encoded {
 
@@ -33,7 +34,7 @@ static struct encoded *vehicle;
 /**
  * variabile di tipo custom message
  */
-ros_proj::customMsg vehicleEncodedMessage;
+nav_msgs::Odometry vehicleEncodedMessage;
 ros::Publisher encodedTopic;
 
 //fixed position of the car
@@ -42,8 +43,8 @@ float longitude_init;
 float h0;
 
 static struct encoded *lla2enu(const sensor_msgs::NavSatFix::ConstPtr &msg);
-void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg);
 
+void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg);
 
 
 /**
@@ -126,42 +127,50 @@ struct encoded *lla2enu(const sensor_msgs::NavSatFix_<std::allocator<void>>::Con
  */
 void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr &msg) {
 
-    vehicle = lla2enu(msg);
-    vehicleEncodedMessage.E = vehicle->Ea;
-    vehicleEncodedMessage.N = vehicle->No;
-    vehicleEncodedMessage.Up = vehicle->U;
+    if (msg->latitude != 0 && msg->longitude != 0 && msg->altitude != 0) {
 
-    encodedTopic.publish(vehicleEncodedMessage);
+        vehicle = lla2enu(msg);
+        vehicleEncodedMessage.pose.pose.position.x = vehicle->Ea;
+        vehicleEncodedMessage.pose.pose.position.y = vehicle->No;
+        vehicleEncodedMessage.pose.pose.position.z = vehicle->U;
+
+
+    } else {
+
+        vehicleEncodedMessage.pose.pose.position.x = 0;
+        vehicleEncodedMessage.pose.pose.position.y = 0;
+        vehicleEncodedMessage.pose.pose.position.z = 0;
+    }
 
 
     //ROS_INFO("Leggo i dati di custom msg: %f , %f , %f ",vehicleEncodedMessage.E, vehicleEncodedMessage.N, vehicleEncodedMessage.Up);
 
 
+    encodedTopic.publish(vehicleEncodedMessage);
+
+
 }
 
+
 /**
-     * Conversion to ENU
-     * @param msg gps message
-     */
+* Conversion to ENU
+* @param msg gps message
+*/
 
 int main(int argc, char **argv) {
 
-    ROS_INFO("argc: %d  argv: %s %s", argc, argv[0], argv[1] );
+    ROS_INFO("argc: %d  argv: %s %s", argc, argv[0], argv[1]);
 
     ros::init(argc, argv, "ros_proj");
-
-
 
     latitude_init = atof(argv[1]);
     longitude_init = atof(argv[2]);
     h0 = atof(argv[3]);
 
-
-
     ros::NodeHandle initNode;
 
-    ros::Subscriber bagTopic = initNode.subscribe(argv[4] , BUFFER_SIZE, topicManager);
-    encodedTopic = initNode.advertise<ros_proj::customMsg>(argv[5], BUFFER_SIZE);
+    ros::Subscriber bagTopic = initNode.subscribe(argv[4], BUFFER_SIZE, topicManager);
+    encodedTopic = initNode.advertise<nav_msgs::Odometry>(argv[5], BUFFER_SIZE);
 
 
     ros::spin();
