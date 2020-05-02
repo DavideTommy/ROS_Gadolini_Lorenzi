@@ -11,6 +11,7 @@ using namespace message_filters;
 
 
 ros::ServiceClient distanceClient;
+ros::Publisher statusPub;
 
 
 /**
@@ -20,8 +21,7 @@ ros::ServiceClient distanceClient;
  */
 bool verifier(const nav_msgs::Odometry::ConstPtr &msg) {
 
-    ROS_INFO("Debug ENU pose: %f %f %f ", msg->pose.pose.position.x, msg->pose.pose.position.y,
-             msg->pose.pose.position.z);
+    //ROS_INFO("Debug ENU pose: %f %f %f ", msg->pose.pose.position.x, msg->pose.pose.position.y, msg->pose.pose.position.z);
 
     return msg != NULL &&
            (msg->pose.pose.position.x != 0 && msg->pose.pose.position.y != 0 && msg->pose.pose.position.z != 0);
@@ -37,6 +37,7 @@ bool verifier(const nav_msgs::Odometry::ConstPtr &msg) {
 void callBack(const nav_msgs::Odometry::ConstPtr &msg1, const nav_msgs::Odometry::ConstPtr &msg2) {
 
     ros_proj::vehicleDistance server;
+    ros_proj::customMsg outMsg;
 
     float msg1e = msg1->pose.pose.position.x;
     float msg1n = msg1->pose.pose.position.y;
@@ -64,20 +65,35 @@ void callBack(const nav_msgs::Odometry::ConstPtr &msg1, const nav_msgs::Odometry
         server.request.uo = msg2u;
 
         if (distanceClient.call(server)) {
-            float localResponse = server.response.dist;
-            //ROS_INFO("msg1e: %f \t msg2e: %f \t", msg1e, msg2e);
-            ROS_INFO("Distance: %f", localResponse);
 
-            if (localResponse > 5) {
-                ROS_INFO("SAFE");
-            } else if (localResponse < 1) {
-                ROS_ERROR("CRASH");
-            } else
-                ROS_WARN("UNSAFE");
+            float localDist;
+
+            localDist = server.response.dist;  //Using a local variable to avoid uncertanties about calls;
+
+            outMsg.distance = localDist;
+
+            if (localDist>5) outMsg.tag = "SAFE";
+            else if (localDist<1)outMsg.tag = "CRASH";
+            else outMsg.tag = "UNSAFE";
+
+            ROS_INFO("Distanza: %f | -_- | Tag: %s",outMsg.distance, outMsg.tag.c_str());
+
+            statusPub.publish(outMsg);
 
         } else
             ROS_ERROR("call error, unable to contact server");
-    }else ROS_ERROR("NaN");
+
+
+    } else {
+
+
+        outMsg.tag ="NaN";
+        outMsg.distance = NAN;
+
+        ROS_ERROR("NaN  |O_O|  %f", outMsg.distance);
+
+        statusPub.publish(outMsg);
+    }
 }
 //TODO spostare distance calc nel cmakelists da executable/ros_porj a filter/ros_proj
 
@@ -88,6 +104,8 @@ int main(int argc, char **argv) {
     //ROS_INFO("Keep Alive master");
 
     ros::NodeHandle filterNode;
+
+    statusPub = filterNode.advertise<ros_proj::customMsg>("Results", 10);
     distanceClient = filterNode.serviceClient<ros_proj::vehicleDistance>("distanceCalculator");
 
     message_filters::Subscriber<nav_msgs::Odometry> carSub(filterNode, "carENU", 1);

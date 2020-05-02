@@ -1,7 +1,6 @@
 #include "ros/ros.h"
 #include <tf/transform_broadcaster.h>
 #include <nav_msgs/Odometry.h>
-#include <string.h>
 
 #define BUFFER_SIZE 10
 
