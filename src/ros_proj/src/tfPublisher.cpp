@@ -11,7 +11,7 @@ void tfPublish(const nav_msgs::Odometry::ConstPtr &msg) {
     static tf::TransformBroadcaster tfBs;
     tf::Transform tfTs;
 
-    tfTs.setOrigin(tf::Vector3((msg->pose.pose.position.x / 100), (msg->pose.pose.position.y/ 100), (msg->pose.pose.position.z/ 100)));
+    tfTs.setOrigin(tf::Vector3((msg->pose.pose.position.x / 200), (msg->pose.pose.position.y/ 200), (msg->pose.pose.position.z/ 200)));
     tf::Quaternion tfQt;
 
     tfQt.setRPY(0, 0, 0);
