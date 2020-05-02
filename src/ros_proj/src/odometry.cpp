@@ -4,7 +4,6 @@
 #include <nav_msgs/Odometry.h>
 #include <sensor_msgs/NavSatFix.h>
 #include <tf/transform_broadcaster.h>
-#include <malloc.h>
 #include <string.h>
 
 
@@ -25,7 +24,7 @@ struct encoded {
 static struct encoded *vehicle;
 
 using std::string;
-//char* tfObject;
+
 string tfObject;
 
 
@@ -135,18 +134,6 @@ void topicManager(const sensor_msgs::NavSatFix_<std::allocator<void>>::ConstPtr 
         vehicleEncodedMessage.pose.pose.position.z = vehicle->U;
 
 
-        tfMsg.setOrigin(tf::Vector3(vehicle->Ea, vehicle->No, vehicle->U));
-
-        tf::Quaternion qt;
-
-        qt.setRPY(0,0,0);
-
-        tfMsg.setRotation(qt);
-
-        tfPub.sendTransform(tf::StampedTransform(tfMsg, ros::Time::now(),"world", "carTFargument"));
-
-
-
     } else {
 
         vehicleEncodedMessage.pose.pose.position.x = 0;
@@ -179,8 +166,6 @@ int main(int argc, char **argv) {
     longitude_init = atof(argv[2]);
     h0 = atof(argv[3]);
 
-    tf::TransformBroadcaster tfPub;
-    tf::Transform tfMsg;
 
     ros::NodeHandle initNode;
 
