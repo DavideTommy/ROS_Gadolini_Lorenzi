@@ -128,3 +128,16 @@ This also happens near the last minute or so of the bag. We avoided testing them
 `rosbag play -s 100 project.bag`
 
 The filtering policy gave us quite some trouble, as it seems that varying the `queue_size` param introduce a remarkable error in the distance computation. This is due to the fact that the ApproximateTimeFilter may be associating messages that are quite far from each other temporally, so the distance is computed using the wrong coordinates. For this situation where real-time data is fundamental, all the `queue_size` params are set to 1.
+
+
+## Disclaimer
+
+Our software is an educational project, based on the works of our professors. The software is provided AS IS, and will not be supported, updated or fixed in the future. If you have any question, you can contact us via email linked to our profiles, but we cannot guarantee any response.
+
+
+**Lorenzo Gadolini** ---> *[@TehLowLow](https://github.com/TehLowLow)*.
+
+**Davide Lorenzi** --->   *[@DavideTommy](https://github.com/DavideTommy)*.
+
+
+*Politecnico di Milano*
