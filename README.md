@@ -17,6 +17,8 @@ This repository contains all the files needed to be able to run this simulation 
 
 - The include folder contains the header file of the service responsible of calculating distance.
 
+- The `.cfg` folder contains the dynamic reconfigure params.
+
 - The folder named launch contains a `.launch` file, responsible of simulating a Terminal call to start each node.
 
 - The folder named msg contains a `.msg` file. This file is the prototype of the custom message that contains the distance between the vehicles and the
@@ -27,6 +29,7 @@ relative status tag.
 - The srv folder contains the `.srv` file that describes the structure of the service responsible of calculating the distance. The content of this file is a list of data types that  will be exchanged during each service request and response.
 
 - The assets folder contains all the `.png` files needded for this documentation, it is not needed in the project.
+
 
 
 ## How to compile the simulation
