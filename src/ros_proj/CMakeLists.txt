@@ -13,6 +13,8 @@ project(ros_proj)
           nav_msgs
           message_generation
           message_filters
+          tf
+          dynamic_reconfigure
           )
 
 
@@ -91,10 +93,10 @@ add_message_files(
 ##     and list every .cfg file to be processed
 
 ## Generate dynamic reconfigure parameters in the 'cfg' folder
-# generate_dynamic_reconfigure_options(
-#   cfg/DynReconf1.cfg
+ generate_dynamic_reconfigure_options(
+   cfg/reconfigure.cfg
 #   cfg/DynReconf2.cfg
-# )
+ )
 
 ###################################
 ## catkin specific configuration ##
@@ -144,6 +146,11 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(ros_proj src/odometry.cpp)
+add_executable(filter src/master.cpp)
+
+add_executable(server src/vehicleDistance.cpp include/vehicleDistance.h)
+add_executable(tfPrint src/tfPublisher.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -156,6 +163,7 @@ add_executable(ros_proj src/odometry.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # è possibile sostituire ros_proj_generate_message_cpp
  add_dependencies(ros_proj ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(ros_proj ${PROJECT_NAME}_gencfg)
 
 
 ## Specify libraries to link a library or executable target against
@@ -219,3 +227,6 @@ add_executable(ros_proj src/odometry.cpp)
 # catkin_add_nosetests(test)
 
 target_link_libraries(ros_proj ${catkin_LIBRARIES})
+target_link_libraries(filter ${catkin_LIBRARIES})
+target_link_libraries(server ${catkin_LIBRARIES})
+target_link_libraries(tfPrint ${catkin_LIBRARIES})

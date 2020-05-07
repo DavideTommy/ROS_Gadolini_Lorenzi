@@ -28,7 +28,7 @@ relative status tag.
 
 - The srv folder contains the `.srv` file that describes the structure of the service responsible of calculating the distance. The content of this file is a list of data types that  will be exchanged during each service request and response.
 
-- The assets folder contains all the `.png` files needded for this documentation, it is not needed in the project.
+- The assets folder contains all the `.png` files needed for this documentation, it is not used in the project.
 
 
 
