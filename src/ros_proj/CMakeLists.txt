@@ -14,6 +14,7 @@ project(ros_proj)
           message_generation
           message_filters
           tf
+          dynamic_reconfigure
           )
 
 
@@ -92,10 +93,10 @@ add_message_files(
 ##     and list every .cfg file to be processed
 
 ## Generate dynamic reconfigure parameters in the 'cfg' folder
-# generate_dynamic_reconfigure_options(
-#   cfg/DynReconf1.cfg
+ generate_dynamic_reconfigure_options(
+   cfg/reconfigure.cfg
 #   cfg/DynReconf2.cfg
-# )
+ )
 
 ###################################
 ## catkin specific configuration ##
@@ -116,8 +117,6 @@ catkin_package(
         message_runtime
         message_filters
         nav_msgs
-        tf
-
 
  # DEPENDS system_lib
 )
@@ -164,6 +163,7 @@ add_executable(tfPrint src/tfPublisher.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # è possibile sostituire ros_proj_generate_message_cpp
  add_dependencies(ros_proj ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(ros_proj ${PROJECT_NAME}_gencfg)
 
 
 ## Specify libraries to link a library or executable target against
