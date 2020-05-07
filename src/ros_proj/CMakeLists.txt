@@ -13,6 +13,7 @@ project(ros_proj)
           nav_msgs
           message_generation
           message_filters
+          tf
           )
 
 
@@ -115,6 +116,8 @@ catkin_package(
         message_runtime
         message_filters
         nav_msgs
+        tf
+
 
  # DEPENDS system_lib
 )
@@ -144,6 +147,11 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(ros_proj src/odometry.cpp)
+add_executable(filter src/master.cpp)
+
+add_executable(server src/vehicleDistance.cpp include/vehicleDistance.h)
+add_executable(tfPrint src/tfPublisher.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -219,3 +227,6 @@ add_executable(ros_proj src/odometry.cpp)
 # catkin_add_nosetests(test)
 
 target_link_libraries(ros_proj ${catkin_LIBRARIES})
+target_link_libraries(filter ${catkin_LIBRARIES})
+target_link_libraries(server ${catkin_LIBRARIES})
+target_link_libraries(tfPrint ${catkin_LIBRARIES})
