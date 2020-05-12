@@ -5,7 +5,8 @@
 #include <message_filters/synchronizer.h>
 #include "vehicleDistance.h"
 #include <nav_msgs/Odometry.h>
-
+#include <dynamic_reconfigure/server.h>
+#include <ros_proj/reconfigureConfig.h>
 
 using namespace message_filters;
 
@@ -13,6 +14,8 @@ using namespace message_filters;
 ros::ServiceClient distanceClient;
 ros::Publisher statusPub;
 
+double crashThreshold;
+double safeThreshold;
 
 /**
  * Verifies message validity
@@ -36,7 +39,7 @@ bool verifier(const nav_msgs::Odometry::ConstPtr &msg) {
  */
 void callBack(const nav_msgs::Odometry::ConstPtr &msg1, const nav_msgs::Odometry::ConstPtr &msg2) {
 
-    ros_proj::vehicleDistance server;
+    ros_proj::distanceCalculator server;
     ros_proj::customMsg outMsg;
 
     float msg1e = msg1->pose.pose.position.x;
@@ -72,8 +75,8 @@ void callBack(const nav_msgs::Odometry::ConstPtr &msg1, const nav_msgs::Odometry
 
             outMsg.distance = localDist;
 
-            if (localDist>5) outMsg.tag = "SAFE";
-            else if (localDist<1)outMsg.tag = "CRASH";
+            if (localDist>safeThreshold) outMsg.tag = "SAFE";
+            else if (localDist<=crashThreshold)outMsg.tag = "CRASH";
             else outMsg.tag = "UNSAFE";
 
             ROS_INFO("Distanza: %f | -_- | Tag: %s",outMsg.distance, outMsg.tag.c_str());
@@ -97,6 +100,12 @@ void callBack(const nav_msgs::Odometry::ConstPtr &msg1, const nav_msgs::Odometry
 }
 //TODO spostare distance calc nel cmakelists da executable/ros_porj a filter/ros_proj
 
+void dynCallback(ros_proj::reconfigureConfig &param,uint32_t bitMask){
+          crashThreshold = param.crashDistance;
+          safeThreshold = param.safeDistance;
+
+}
+
 int main(int argc, char **argv) {
 
     ros::init(argc, argv, "my_name");
@@ -106,15 +115,21 @@ int main(int argc, char **argv) {
     ros::NodeHandle filterNode;
 
     statusPub = filterNode.advertise<ros_proj::customMsg>("Results", 10);
-    distanceClient = filterNode.serviceClient<ros_proj::vehicleDistance>("distanceCalculator");
+    distanceClient = filterNode.serviceClient<ros_proj::distanceCalculator>("distanceCalculator");
 
     message_filters::Subscriber<nav_msgs::Odometry> carSub(filterNode, "carENU", 1);
     message_filters::Subscriber<nav_msgs::Odometry> obsSub(filterNode, "obsENU", 1);
+
 
     typedef message_filters::sync_policies::ApproximateTime<nav_msgs::Odometry, nav_msgs::Odometry> filterPolicy;
     message_filters::Synchronizer<filterPolicy> sync(filterPolicy(1), carSub, obsSub);
 
     sync.registerCallback(boost::bind(&callBack, _1, _2));
+
+    dynamic_reconfigure::Server<ros_proj::reconfigureConfig> dynServer;
+    dynamic_reconfigure::Server<ros_proj::reconfigureConfig>::CallbackType f;
+
+    dynServer.setCallback(boost::bind(&dynCallback, _1, _2));
 
     ros::spin();
 
