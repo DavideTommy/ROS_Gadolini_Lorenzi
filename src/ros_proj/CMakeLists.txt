@@ -117,6 +117,8 @@ catkin_package(
         message_runtime
         message_filters
         nav_msgs
+        tf
+
 
  # DEPENDS system_lib
 )
@@ -162,8 +164,9 @@ add_executable(tfPrint src/tfPublisher.cpp)
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 # è possibile sostituire ros_proj_generate_message_cpp
- add_dependencies(ros_proj ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(ros_proj ${PROJECT_NAME}_gencfg)
+add_dependencies(ros_proj ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(filter ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(filter ${PROJECT_NAME}_gencfg)
 
 
 ## Specify libraries to link a library or executable target against
