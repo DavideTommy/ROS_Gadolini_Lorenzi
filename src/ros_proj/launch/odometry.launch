@@ -5,6 +5,7 @@
     <node pkg="ros_proj" type="server" name = "serverNode" output="screen"/>
     <node pkg="ros_proj" type="tfPrint" name = "carTf" args="/carENU" output="screen"/>
     <node pkg="ros_proj" type="tfPrint" name = "obsTf" args="/obsENU"  output="screen"/>
-    <!--node pkg="rviz" type="rviz" name = "tfRviz" args ="-d $(find ros_proj)/rviz/tfRviz.rviz"/-->
+    <node pkg="rviz" type="rviz" name = "tfRviz" args ="-d $(find ros_proj)/rviz/tfRviz.rviz"/>
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name = "dynaConf"/>
 
 </launch>
